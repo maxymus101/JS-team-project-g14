@@ -1,0 +1,188 @@
+.work-together {
+    margin: auto;
+}
+
+.work-together-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.work-together-textblock {
+    margin-bottom: 40px;
+}
+
+.work-together-title {
+    margin-bottom: 46px;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.work-together-contact-list-item {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.work-together-parag {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55556;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.work-together-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.work-contact-list-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #292929;
+    fill: #00B068;
+}
+
+.work-together-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.work-together-form-input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    max-width: 320px;
+    background-color: #E4E5E6;
+    border: none;
+
+}
+
+.work-together-form-message {
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 320px;
+    background-color: #E4E5E6;
+    border: none;
+    height: 128px;
+    resize: none;
+}
+
+.work-together-form-btn {
+    border-radius: 8px;
+    padding: 12px 24px;
+    mAX-width: 320px;
+    border: none;
+    background-color: #00B068;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.footer {
+    margin: auto;
+    border-top: 1px solid #e4e5e6;
+}
+
+.footer-block {
+    padding-top: 40px;
+    padding-bottom: 24px;
+
+}
+
+.footer-title {
+    margin-bottom: 32px;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+span {
+    color: #292929;
+}
+
+.footer-socials-item-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.footer-additional {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    max-width: 197px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-title {
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+    }
+
+    .work-together-contact-list {
+        flex-direction: row;
+        margin-bottom: 60px;
+
+    }
+
+    .work-together-parag {
+        max-width: 488px;
+        margin-bottom: 32px;
+    }
+
+    .work-together-form-input,
+    .work-together-form-message {
+        min-width: 100%;
+    }
+
+    .work-together-form-btn {
+        max-width: 173px;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .footer-socials {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .footer-additional{
+            max-width: 100%;
+                text-align: right;
+    }
+}
