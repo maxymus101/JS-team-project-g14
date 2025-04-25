@@ -4,43 +4,98 @@
     margin: auto;
     position: relative;
 }
- h2 {
-     text-transform: uppercase;
-    font-family: Impact;
-     font-size: 108 px;
-     letter-spacing: 1.8 px;
-      line-height: 124 px
- }
 
- ul.accordion {
-     list-style: none;
-     padding: 0;
-     margin: 0;
- }
-
- .accordion-item {
-     background: #FFFFFF;
-     border-radius: 16px;
-     margin-bottom: 10px;
-     overflow: hidden;
-     transition: all 0.3s ease;
-     border: 1px solid #E4E5E6;
- }
- .accordion-header {
+.faq-title {
+    font-family: Impact, sans-serif;
+    font-size: 108px;
+    line-height: 124px;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
-    font-family: Poppins Regular;
-    font-size: 20 px;
-    letter-spacing: 0.5 px;
-    line-height: 32 px;
-    color: #292929;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-.accordion-content {
-    font-family: Poppins Light;
-     font-size: 16 px;
-     letter-spacing: 0.2 px;
-      line-height: 24 px;
+    margin-bottom: 40px;
+    text-align: left;
     color: #292929;
 }
+
+.faq-title .accent {
+    color: #00B068;
+}
+
+   .accordion-item{
+    
+   display:block;
+   width:100%;
+font-family: Poppins Regular;
+ font-size: 20 px;
+ letter-spacing: 0.5 px;
+  line-height: 32 px
+   }
+
+   .accordion-header {
+       cursor: pointer;
+       margin: 0px 0px 10px 0px;
+       padding: 10px;
+       background: #fff;
+       color: #292929;
+       width: 100%;
+    text-transform: uppercase;
+      
+       
+   }
+
+   .close .accordion-content {
+       height: 0px;
+       transition: height 1s ease-out;
+       -webkit-transform: scaleY(0);
+       -o-transform: scaleY(0);
+       -ms-transform: scaleY(0);
+       transform: scaleY(0);
+       
+       display: block;
+
+   }
+
+   .open .accordion-content {
+       padding: 20px;
+       background-color: #BCDFD1;
+       border: none;
+       width: 100%;
+       margin: 0px 0px 10px 0px;
+       display: block;
+       -webkit-transform: scaleY(1);
+       -o-transform: scaleY(1);
+       -ms-transform: scaleY(1);
+       transform: scaleY(1);
+       -webkit-transform-origin: top;
+       -o-transform-origin: top;
+       -ms-transform-origin: top;
+       transform-origin: top;
+
+       -webkit-transition: -webkit-transform 0.4s ease-out;
+       -o-transition: -o-transform 0.4s ease;
+       -ms-transition: -ms-transform 0.4s ease;
+       transition: transform 0.4s ease;
+       /*box-sizing: border-box;*/
+    font-family: Poppins Light;
+        font-size: 16 px;
+        letter-spacing: 0.2 px;
+        line-height: 24 px;
+        color: #292929;
+   }
+
+   .open .accordion-header{
+       margin: 0px;
+       /*-webkit-border-top-left-radius: 3px;
+       -webkit-border-top-right-radius: 3px;
+       -moz-border-radius-topleft: 3px;
+       -moz-border-radius-topright: 3px;
+       border-top-left-radius: 3px;
+       border-top-right-radius: 3px;
+       -webkit-border-bottom-right-radius: 0px;
+       -webkit-border-bottom-left-radius: 0px;
+       -moz-border-radius-bottomright: 0px;
+       -moz-border-radius-bottomleft: 0px;
+       border-bottom-right-radius: 0px;
+       border-bottom-left-radius: 0px;*/
+       background-color: #BCDFD1;
+       color:#292929;
+   }
