@@ -23,7 +23,7 @@
     font-family: Poppins Regular;
     display: block;
     float: right;
-    width: 35%;
+    width: 38%;
     text-align: left;
 }
    .accordion-item{
@@ -32,19 +32,22 @@ text-align: left;
 font-family: Poppins Regular;
  font-size: 20 px;
  letter-spacing: 0.5 px;
-  line-height: 32 px
+  line-height: 32 px;
+margin-bottom: 1px;
    }
 
    .accordion-header {
        cursor: pointer;
-       margin: 0px 0px 24px 0px;
-       padding-right: 24 px;
+       margin: 0;
+    padding: 15px;
        background: #f0f0f0;
        color: #292929;
        width: 100%;
     text-transform: uppercase;
       border: none;
        text-align: left;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
    }
 
    .close .accordion-content {
@@ -60,11 +63,12 @@ font-family: Poppins Regular;
    }
 
    .open .accordion-content {
-       padding: 28px;
        background-color: #BCDFD1;
        border: none;
-       margin: 0px 0px 24px 0px;
+    padding: 15px;
        display: block;
+    border-radius: 0 0 5px 5px;
+        margin-top: 0;
        -webkit-transform: scaleY(1);
        -o-transform: scaleY(1);
        -ms-transform: scaleY(1);
