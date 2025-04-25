@@ -1,0 +1,85 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.tech-skills-title {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .tech-skills .tech-skills-line {
+        font-size: 32px !important;
+        padding: 32px 0 !important;
+        letter-spacing: 0.5px;
+    }
+    .tech-skills {
+        height: 244px !important;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+.tech-skills {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+  height: 280px;
+}
+
+.tech-skills-green {
+    background-color: #BCDFD1;
+}
+
+.tech-skills-inner {
+  display: flex;
+}
+
+.tech-skills-inner .tech-skills-line {
+  color: #000000;
+}
+
+.tech-skills-line {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 40px 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation: marqueeLine 14s linear infinite;
+}
+
+.tech-skills-point {
+  color: #00B068;
+}
+
+.tech-skills-grey {
+    background-color: #E4E5E6;
+    color: #00B068;
+    transform: rotate(2deg);
+}
+
+.tech-skills-inner-grey {
+    display: flex;}
+
+.tech-skills-inner-grey .tech-skills-point {
+  color: #000000;
+}
+
+.tech-skills-grey .tech-skills-line {
+  animation: marqueeLine 11s linear infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+}
+
