@@ -1,0 +1,46 @@
+.faq-section {
+    padding: 60px 20px;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+ h2 {
+     text-transform: uppercase;
+    font-family: Impact;
+     font-size: 108 px;
+     letter-spacing: 1.8 px;
+      line-height: 124 px
+ }
+
+ ul.accordion {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .accordion-item {
+     background: #FFFFFF;
+     border-radius: 16px;
+     margin-bottom: 10px;
+     overflow: hidden;
+     transition: all 0.3s ease;
+     border: 1px solid #E4E5E6;
+ }
+ .accordion-header {
+    text-transform: uppercase;
+    font-family: Poppins Regular;
+    font-size: 20 px;
+    letter-spacing: 0.5 px;
+    line-height: 32 px;
+    color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.accordion-content {
+    font-family: Poppins Light;
+     font-size: 16 px;
+     letter-spacing: 0.2 px;
+      line-height: 24 px;
+    color: #292929;
+}
