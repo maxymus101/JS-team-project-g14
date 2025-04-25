@@ -1,8 +1,9 @@
 .faq-section {
     padding: 60px 20px;
-    max-width: 1280px;
+    max-width: 320;
     margin: auto;
     position: relative;
+    
 }
 
 .faq-title {
@@ -33,7 +34,7 @@ font-family: Poppins Regular;
  font-size: 20 px;
  letter-spacing: 0.5 px;
   line-height: 32 px;
-margin-bottom: 1px;
+margin-bottom: 0 px;
    }
 
    .accordion-header {
