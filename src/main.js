@@ -1,1 +1,3 @@
-import {} from 'module';
+import { } from 'module';
+import './js/projects-render';
+
