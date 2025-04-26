@@ -96,10 +96,12 @@
     transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-.btn-accordion-question :hover {
-    background-color: none;
+.btn-accordion-question :hover  {
+    background-color: #BCDFD1;
 }
-
+.btn-accordion-question :active {
+    background-color: #BCDFD1;
+}
 .accordion-item.open .accordion-content {
     padding: 24px;
     max-height: 500px;
