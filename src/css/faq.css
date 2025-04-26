@@ -1,28 +1,27 @@
-/*.faq-section {
-    padding: 40px 20px;
-    max-width: 320px;
+.faq-section {
+    min-width: 320px;
+    max-width: 360px;
+    height: 1120px;
+    margin-bottom: 80px;
+}
+
+.faq-div.container {
+    max-width: 360px;
     margin: 0 auto;
-    position: relative;
-    background-image: url('/src/img/decor bg 4.png');
-    background-repeat: repeat;
-    z-index: 1;
-    box-sizing: border-box;
+    padding: 40px 20px;
 }
 
 .faq-title {
     font-family: Impact;
     font-size: 52px;
-    line-height: 64px;
-    letter-spacing: 1.8px;
+    line-height: 123%;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 30px;
     text-align: left;
     color: #292929;
-    z-index: 2;
-}
-
-.faq-title span {
-    display: block;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .faq-title .accent {
@@ -32,470 +31,151 @@
 .accordion {
     display: block;
     width: 100%;
-    text-align: left;
-    position: relative;
-    z-index: 2;
     list-style: none;
     padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
 
 .accordion-item {
-    display: block;
-    text-align: left;
-    font-family: Poppins Regular;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
-    margin-bottom: 1px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .accordion-header {
-    cursor: pointer;
-    margin: 0;
-    padding: 15px;
-    background: #f0f0f0;
-    color: #292929;
-    width: 100%;
-    text-transform: uppercase;
-    border: none;
-    text-align: left;
-    border-radius: 5px;
-    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Poppins Regular;
-    font-size: 18 px;
-    letter-spacing: 0.5 px;
-    line-height: 28 px;
+    cursor: pointer;
+    padding: 16px 24px;
+    background-color: #f0f0f0;
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #292929;
 }
 
-.close .accordion-content {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-out;
-    padding: 0 15px;
+.accordion-header:hover {
+    background-color: #e4e4e4;
 }
 
-.open .accordion-content {
-    background-color: #BCDFD1;
+.btn-accordion-question {
+    background: none;
     border: none;
-    padding: 15px;
-    display: block;
-    border-radius: 0 0 5px 5px;
-    margin-top: 0;
-    transition: padding 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-sizing: border-box;
-    font-family: Poppins Light;
-    font-size: 14px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.icon-dropdown {
+    width: 32px;
+    height: 32px;
+}
+
+.accordion-content {
+    background-color: #BCDFD1;
+    font-family: "Poppins Light", sans-serif;
+    font-size: 16px;
     letter-spacing: 0.2px;
-    line-height: 20px;
+    line-height: 24px;
     color: #292929;
     text-align: left;
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
 }
 
-.open .accordion-header {
+.accordion-item.open .accordion-content {
+    padding: 24px;
+    max-height: 500px;
+}
+
+.accordion-item.open .accordion-header {
     background-color: #BCDFD1;
-    color: #292929;
     border-radius: 5px 5px 0 0;
 }
 
-/* Стилі для планшетів (від 768px) 
+.accordion-item.open .btn-accordion-question {
+    transform: rotate(180deg);
+}
+
+.decor {
+    display: none;
+}
+
+/* Media Queries 
+
 @media (min-width: 768px) {
-    .faq-section {
-        max-width: 960px;
-        padding: 60px 40px;
-        display: block;
+   .faq-section {
+        
+            padding: 60px 0;
+        }
+    .faq-div.container {
+        width: 100%;
+        max-width: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+        }
+    
+        .faq-title {
+            font-family: Impact, sans-serif;
+             font-size: 108px;
+             letter-spacing: 1.8px;
+              line-height: 124px;
+            width: 100%;
+                max-width: none;
+        }
+
+                .accordion {
+                    width: 100%;
+                }
+    
+        .accordion-header {
+            font-family: Poppins Regular, sans-serif;
+                font-size: 20px;
+                letter-spacing: 0.5px;
+                line-height: 32px;
+        }
+        .accordion-content{
+            font-family: Poppins Light, sans-serif;
+            font-size: 16px;
+             letter-spacing: 0.2px;
+              line-height: 24px;
+        }
+    
+
+@media (min-width: 1200px) {
+    
+.faq-div.container {
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
         
     }
 
     .faq-title {
         font-size: 108px;
         line-height: 124px;
-        margin-bottom: 40px;
-        text-align: center;
-        flex-basis: auto;
-        
-        padding-right: 0;
-        
+        letter-spacing: 1.8px;
+        width: 45%;
     }
 
-    .accordion {
-        width: 100%;
-        
-        float: none;
-    }
-
-    .accordion-item {
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 5px;
-    }
-
-    .accordion-header {
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    .open .accordion-content {
-        font-size: 16px;
-        line-height: 26px;
-        padding: 15px;
-    }
-}
-
-
-@media (min-width: 1280px) {
-    .faq-section {
-        max-width: 1440px;
-        
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        
-        box-sizing: border-box;
-    }
-.faq-title {
-         font-family: Impact,
-         sans-serif;
-         font-size: 108px;
-         line-height: 124px;
-         letter-spacing: 1.8px;
-         text-transform: uppercase;
-         margin-bottom: 40px;
-         text-align: left;
-         color: #292929;
+         .accordion {
+             width: 50%;
          }
-    
-         .faq-title .accent {
-             color: #00B068;
-         }
-
-        .accordion {
-            font-family: Poppins Regular;
-            display: block;
-            float: right;
-            width: 38%;
-            text-align: left;
-        }
-    
-        .accordion-item {
-            display: block;
-            text-align: left;
-            font-family: Poppins Regular;
-            font-size: 20 px;
-            letter-spacing: 0.5 px;
-            line-height: 32 px;
-            margin-bottom: 0 px;
-        }
-    
-        .accordion-header {
-            cursor: pointer;
-            margin: 0;
-            padding: 15px;
-            background: #f0f0f0;
-            color: #292929;
-            width: 100%;
-            text-transform: uppercase;
-            border: none;
-            text-align: left;
-            border-radius: 5px 5px 0 0;
-            margin-bottom: 0;
-        }
-
-    .open .accordion-content {
-        font-size: 18px;
-        line-height: 28px;
-        padding: 20px;
-    }
-}
-*/
-/*.faq-section{
-    min-width: 320px;
-    
-
-    
-}
-
-.faq-title{
-    font-family: Impact;
-    font-size: 52px;
-    line-height: 123%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    text-align: left;
-    color: #292929;
-   
-}
-    
-.faq-title .accent {
-    color: #00B068;
-}
-
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
-.accordion {
-    display: block;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-    list-style: none;
-    padding: 0;
-}
-
-.accordion-item {
-    display: block;
-    
-    margin-bottom: 1px;
-}
-.accordion-question{
-    cursor: pointer; 
-    margin: 0;
-    padding: 15px;
-    background: #f0f0f0;
-    color: #292929;
-    width: 100%;
-    text-transform: uppercase;
-    border: none;
-    text-align: left;
-    border-radius: 5px;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Poppins Regular;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 28px;
-}
-
-.icon-dropdown {
-    display: flex;
-    padding: 8px;
-    width: 32px;
-    width: 32px;
-
-}
-
-.close .accordion-content {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-out;
-    padding: 0 15px;
-}
-
-.open .accordion-content {
-    background-color: #BCDFD1;
-    border: none;
-    padding: 15px;
-    display: block;
-    border-radius: 0 0 5px 5px;
-    margin-top: 0;
-    transition: padding 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-sizing: border-box;
-    font-family: Poppins Light;
-    font-size: 14px;
-    letter-spacing: 0.2px;
-    line-height: 20px;
-    color: #292929;
-    text-align: left;
-}
-
-.open .accordion-header {
-    background-color: #BCDFD1;
-    color: #292929;
-    border-radius: 5px 5px 0 0;
-}*/
-.faq-section {
-    min-width: 320px;
-    /* Видаліть max-width, щоб дозволити розширення на більших екранах */
-    /* height: 1120px; Видаліть фіксовану висоту */
-    padding: 20px;
-    /* Налаштуйте внутрішні відступи за потреби */
-    box-sizing: border-box;
-}
-
-.faq-div.container {
-    max-width: 1200px;
-    /* Приклад максимальної ширини для контейнера контенту */
-    margin: 0 auto;
-    /* Центруйте контейнер контенту на більших екранах */
-    padding: 40px 20px;
-    /* Налаштуйте внутрішні відступи для контейнера контенту */
-    
-}
-
-.faq-title {
-    font-family: Impact;
-    font-size: 52px;
-    line-height: 123%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    text-align: left;
-    color: #292929;
-}
-
-.faq-title .accent {
-    color: #00B068;
-}
-
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
-.accordion {
-    display: block;
-    width: 100%;
-    /* Зробіть його на всю ширину на менших екранах */
-    text-align: left;
-    /* Вирівняйте текст всередині елементів аккордеона по лівому краю */
-    position: relative;
-    margin: 0;
-    /* Видаліть фіксовані відступи */
-    list-style: none;
-    padding: 0;
-}
-
-.accordion-item {
-    display: block;
-    margin-bottom: 1px;
-}
-
-.accordion-question {
-    cursor: pointer;
-    margin: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background: #f0f0f0;
-    color: #292929;
-    width: 100%;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 0;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Poppins Regular, sans-serif;;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 1.2;
-}
-
-.icon-dropdown {
-    /* Застосуйте стилі до обох назв класів */
-    display: flex;
-    padding: 8px;
-    width: 32px;
-    height: 32px;
-}
-
-.close .accordion-content {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-out;
-    padding: 0 15px;
-}
-
-.open .accordion-content {
-    background-color: #BCDFD1;
-    border: none;
-    padding: 15px;
-    display: block;
-    margin-top: 0;
-    transition: padding 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-sizing: border-box;
-    font-family: Poppins Light;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
-    color: #292929;
-    text-align: left;
-    
-}
-
-.open .accordion-question {
-    background-color: #BCDFD1;
-    color: #292929;
-    
-}
-.decor{
-    display: none;
-}
-
-/* Медіа-запит для більших екранів (планшетів і десктопів) */
-@media (min-width: 768px) {
-    .faq-section {
-        padding: 40px;
-        /* Налаштуйте внутрішні відступи для більших екранів */
-    }
-
-    .accordion {
-        text-align: left;
-        /* Вирівняйте аккордеон по лівому краю на більших екранах */
-        margin: 0;
-        /* Скиньте відступи */
-    }
-    .decor {
-        display: none;
-    }
-}
-
-/* Медіа-запит для десктопних екранів */
-@media (min-width: 1200px) {
-    .faq-section {
-        padding: 60px;
-        /* Налаштуйте внутрішні відступи для десктопа */
-    }
-
-    .faq-div.container {
-        display: flex;
-        /* Розташуйте заголовок та аккордеон поруч */
-        align-items: flex-start;
-        /* Вирівняйте елементи по верхньому краю */
-        justify-content: space-between;
-        /* Розмістіть простір між заголовком та аккордеоном */
-        position: relative;
-    }
-
-    .faq-title {
-        font-size: 72px;
-        /* Налаштуйте розмір заголовка для десктопа */
-        margin-bottom: 0;
-        /* Видаліть нижній відступ при розташуванні поруч */
-        max-width: 40%;
-        /* Обмежте максимальну ширину заголовка */
-    }
-
-    .accordion {
-        width: 55%;
-        /* Налаштуйте ширину аккордеона для десктопа */
-        margin: 0;
-        /* Скиньте відступи */
-    }
 
     .decor {
         display: block;
         position: absolute;
         left: 0;
         bottom: 0;
+        width: 520px;
+        height: 406px;
     }
-}
+}*/
