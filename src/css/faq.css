@@ -1,12 +1,11 @@
 .faq-section {
     min-width: 320px;
-    max-width: 360px;
     height: 1120px;
     margin-bottom: 80px;
 }
 
 .faq-div.container {
-    max-width: 360px;
+ /*max-width: 360px;*/
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -67,11 +66,20 @@
     padding: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
 }
 
 .icon-dropdown {
     width: 32px;
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .accordion-content {
@@ -86,6 +94,10 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.btn-accordion-question :hover {
+    background-color: none;
 }
 
 .accordion-item.open .accordion-content {
