@@ -21,11 +21,13 @@
     /*max-width: 320px;*/
     width: 100%;
     margin-bottom: 40px;
+    
 }
 
 .faq-title .accent {
     color: #00B068;
 }
+ 
 
 .accordion {
     display: block;
@@ -91,7 +93,7 @@
     box-sizing: border-box;
     background-color: #BCDFD1;
     font-family: "Poppins Light", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 24px;
     color: #292929;
@@ -130,7 +132,23 @@
     display: none;
 }
 
-
+/*@media (min-width: 360px) and (max-width: 767px) {
+    .faq-title {
+        font-size: 52px;
+        line-height: 123%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    }
+    .accordion-header {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .accordion-content {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+    }
+}*/
 
 @media (min-width: 768px) {
    
@@ -141,7 +159,7 @@
         margin: 0 auto;
         box-sizing: border-box;
     }
-        }
+        
     
         .faq-title {
             font-family: Impact, sans-serif;
@@ -164,7 +182,7 @@
              letter-spacing: 0.2px;
               line-height: 24px;
         }
-    
+}
 
 @media (min-width: 1200px) {
     
