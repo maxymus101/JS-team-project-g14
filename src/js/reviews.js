@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-
 import { fetchReviews } from './api.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,50 +31,110 @@ function renderReviews(reviews) {
 
   reviews.forEach(({ avatar_url, author, review }) => {
     const li = document.createElement('li');
-    li.className = 'swiper-slide';
+    li.className = 'swiper-slide reviews-item';
     li.innerHTML = `
-      <p class="review-text">${review}</p>
-      <div class="review-author">
-        <img src="${avatar_url}" alt="${author}">
-        <div class="review-author-name">${author}</div>
+      <div class="reviews-card">
+        <p class="reviews-text">${review}</p>
+        <div class="reviews-author">
+          <img src="${avatar_url}" alt="${author}">
+          <p class="reviews-author-name">${author}</p>
+        </div>
       </div>
     `;
     list.appendChild(li);
   });
 }
 
+let swiperInstance; // Змінна для доступу до Swiper зовні
+
 function initSwiper() {
-  const swiper = new Swiper('.reviews-swiper', {
+  swiperInstance = new Swiper('.reviews-swiper', {
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 32,
     navigation: {
-      nextEl: '.reviews-button-next',
-      prevEl: '.reviews-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: true,
+      onlyInViewport: false,
     },
     mousewheel: true,
+    breakpoints: {
+      360: {
+        spaceBetween: 16,
+      },
+      768: {
+        spaceBetween: 32,
+      },
+      1280: {
+        spaceBetween: 32,
+      },
+    },
     on: {
-      reachEnd: function () {
-        document
-          .querySelector('.reviews-button-next')
-          .classList.add('swiper-button-disabled');
+      reachEnd() {
+        const nextButton = document.querySelector('.swiper-button-next');
+        if (nextButton) {
+          nextButton.classList.add('swiper-button-disabled');
+        }
       },
-      reachBeginning: function () {
-        document
-          .querySelector('.reviews-button-prev')
-          .classList.add('swiper-button-disabled');
+      reachBeginning() {
+        const prevButton = document.querySelector('.swiper-button-prev');
+        if (prevButton) {
+          prevButton.classList.add('swiper-button-disabled');
+        }
       },
-      fromEdge: function () {
-        document
-          .querySelector('.reviews-button-next')
-          .classList.remove('swiper-button-disabled');
-        document
-          .querySelector('.reviews-button-prev')
-          .classList.remove('swiper-button-disabled');
+      fromEdge() {
+        const nextButton = document.querySelector('.swiper-button-next');
+        const prevButton = document.querySelector('.swiper-button-prev');
+        if (nextButton) {
+          nextButton.classList.remove('swiper-button-disabled');
+        }
+        if (prevButton) {
+          prevButton.classList.remove('swiper-button-disabled');
+        }
       },
     },
   });
+
+  addNavigationListeners();
+}
+
+function addNavigationListeners() {
+  const nextButton = document.querySelector('.swiper-button-next');
+  const prevButton = document.querySelector('.swiper-button-prev');
+
+  if (nextButton) {
+    nextButton.addEventListener('click', () => {
+      if (!nextButton.classList.contains('swiper-button-disabled')) {
+        swiperInstance.slideNext();
+      }
+    });
+    nextButton.addEventListener('keydown', e => {
+      if (
+        (e.key === 'Enter' || e.key === ' ') &&
+        !nextButton.classList.contains('swiper-button-disabled')
+      ) {
+        e.preventDefault();
+        swiperInstance.slideNext();
+      }
+    });
+  }
+
+  if (prevButton) {
+    prevButton.addEventListener('click', () => {
+      if (!prevButton.classList.contains('swiper-button-disabled')) {
+        swiperInstance.slidePrev();
+      }
+    });
+    prevButton.addEventListener('keydown', e => {
+      if (
+        (e.key === 'Enter' || e.key === ' ') &&
+        !prevButton.classList.contains('swiper-button-disabled')
+      ) {
+        e.preventDefault();
+        swiperInstance.slidePrev();
+      }
+    });
+  }
 }
