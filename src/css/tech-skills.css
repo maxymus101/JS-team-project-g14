@@ -59,7 +59,7 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     .tech-skills .tech-skills-line {
         font-size: 32px !important;
         padding: 32px 0 !important;
@@ -70,8 +70,14 @@
         padding: 0;
     }
 }
+@media screen and (min-width: 768px) {
+  .tech-skills {
+      font-size: 36px;
+      height: 280px;
+    }
+}
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
 
 .tech-skills {
   font-size: 36px;
