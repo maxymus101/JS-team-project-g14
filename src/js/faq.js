@@ -20,19 +20,20 @@ export function faqProjects() {
     const contentElement = item.querySelector('.accordion-content'); 
     const useElement = headerButton.querySelector('.icon-dropdown use');
 
-    if (index === 0 && useElement) {
-      useElement.setAttribute('href', './img/svg/icons.svg#icon-button-up');
-    } else if (useElement) {
-      useElement.setAttribute('href', './img/svg/icons.svg#icon-button-down');
-    }
+     if (useElement) {
+      useElement.setAttribute('href', index === 0 && item.classList.contains('open')
+        ? './img/svg/icons.svg#icon-button-down' 
+        : './img/svg/icons.svg#icon-button-down'
+       );
+        }
 
     headerButton.addEventListener('click', () => {
       setTimeout(() => {
         if (item.classList.contains('open') && contentElement) {
-          contentElement.style.height = 'auto'; 
+          contentElement.style.height = 'auto';
         }
       }, accordion.settings.duration + 50);
-      
+
       if (useElement) {
         const isOpen = item.classList.contains('open');
         useElement.setAttribute('href', isOpen ? './img/svg/icons.svg#icon-button-up' : './img/svg/icons.svg#icon-button-down');
