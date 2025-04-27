@@ -57,7 +57,8 @@ function initSwiper() {
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true, // важливо для фокусованого прокручування
+      pageUpDown: true,
     },
     mousewheel: true,
     breakpoints: {
@@ -74,30 +75,23 @@ function initSwiper() {
     on: {
       reachEnd() {
         const nextButton = document.querySelector('.swiper-button-next');
-        if (nextButton) {
-          nextButton.classList.add('swiper-button-disabled');
-        }
+        if (nextButton) nextButton.classList.add('swiper-button-disabled');
       },
       reachBeginning() {
         const prevButton = document.querySelector('.swiper-button-prev');
-        if (prevButton) {
-          prevButton.classList.add('swiper-button-disabled');
-        }
+        if (prevButton) prevButton.classList.add('swiper-button-disabled');
       },
       fromEdge() {
         const nextButton = document.querySelector('.swiper-button-next');
         const prevButton = document.querySelector('.swiper-button-prev');
-        if (nextButton) {
-          nextButton.classList.remove('swiper-button-disabled');
-        }
-        if (prevButton) {
-          prevButton.classList.remove('swiper-button-disabled');
-        }
+        if (nextButton) nextButton.classList.remove('swiper-button-disabled');
+        if (prevButton) prevButton.classList.remove('swiper-button-disabled');
       },
     },
   });
 
   addNavigationListeners();
+  addKeyboardListeners(); // додатково слухаємо стрілки
 }
 
 function addNavigationListeners() {
@@ -133,6 +127,20 @@ function addNavigationListeners() {
         !prevButton.classList.contains('swiper-button-disabled')
       ) {
         e.preventDefault();
+        swiperInstance.slidePrev();
+      }
+    });
+  }
+}
+
+function addKeyboardListeners() {
+  const swiperContainer = document.querySelector('.reviews-swiper');
+
+  if (swiperContainer) {
+    swiperContainer.addEventListener('keydown', event => {
+      if (event.key === 'ArrowRight') {
+        swiperInstance.slideNext();
+      } else if (event.key === 'ArrowLeft') {
         swiperInstance.slidePrev();
       }
     });

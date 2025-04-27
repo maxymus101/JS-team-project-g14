@@ -122,9 +122,7 @@
   }
 
   .reviews-button-prev:hover,
-  .reviews-button-next:hover,
-  .reviews-button-prev:focus,
-  .reviews-button-next:focus {
+  .reviews-button-next:hover {
     background-color: #e4e5e6;
     border: 1px solid #292929;
   }
