@@ -11,14 +11,14 @@
 }
 
 .faq-title {
-    font-family: Impact;
+    font-family: Impact,sans-serif;;
     font-size: 52px;
     line-height: 123%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: left;
     color: #292929;
-    max-width: 320px;
+    /*max-width: 320px;*/
     width: 100%;
     margin-bottom: 40px;
 }
@@ -39,8 +39,13 @@
 
 .accordion-item {
     border-bottom: 1px solid #e0e0e0;
-    overflow: hidden;
+   overflow: hidden;
     transition: all 0.3s ease;
+}
+
+.accordion-item.open {
+    overflow: visible;
+  
 }
 
 .accordion-header {
@@ -86,15 +91,15 @@
     box-sizing: border-box;
     background-color: #BCDFD1;
     font-family: "Poppins Light", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.2px;
     line-height: 24px;
     color: #292929;
     text-align: left;
     padding: 0 24px;
-    max-height: 0;
+   
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+   /* transition: max-height 0.4s ease, padding 0.3s ease;*/
 }
 
 .btn-accordion-question :hover  {
@@ -104,8 +109,12 @@
     background-color: #BCDFD1;
 }
 .accordion-item.open .accordion-content {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
     padding: 24px;
-    max-height: ;
+    display: block !important;
+        
 }
 
 .accordion-item.open .accordion-header {
@@ -165,6 +174,7 @@
         align-items: flex-start;
         padding: 0 32px;
         margin: 0 auto;
+        position: relative;
            
 }
 
@@ -176,14 +186,13 @@
         margin-top: 0;
         padding-right: 32px;
         width: 520px;
-        height: 372px;
+      /*height: 372px;*/
         padding: 0;
     }
 
     .accordion {
         width: 592px;
-        height: 744px;
-        align-self: flex-end;
+       align-self: flex-end;
         margin-top: 290px;
         
     }
@@ -192,9 +201,10 @@
         display: block;
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: auto;
-            height: auto;
+            bottom: 0;
+           /* top: 50%;
+            transform: translateY(-50%);*/
+            width: 520px;
+            height: 406px;
     }
 }
