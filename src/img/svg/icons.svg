@@ -50,5 +50,11 @@
       <path fill="none" stroke="#e4e5e6" stroke-width=".667" d="M5.333.333h21.333a5 5 0 0 1 5 5v21.333a5 5 0 0 1-5 5H5.333a5 5 0 0 1-5-5V5.333a5 5 0 0 1 5-5z" style="stroke:var(--color3, #e4e5e6)"/>
       <path fill="none" stroke="#292929" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M10.667 16h10.667M17.333 12l4 4-4 4" style="stroke:var(--color4, #292929)"/>
     </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+      <path fill="none" stroke="#e4e5e6" style="stroke:var(--color1, #e4e5e6)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M26.667 16H5.334M13.333 24l-8-8 8-8"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
   </defs>
 </svg>      
