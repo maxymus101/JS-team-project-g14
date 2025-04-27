@@ -45,7 +45,6 @@
         height: auto;
         position: absolute;
         top: -17%;
-        /* right: 2%; */
         right: calc(50% - 610px);
         z-index: 50;
     }
@@ -87,8 +86,6 @@
 }
 
 .benefits-list {
-    min-width: 100%;
-    max-width: 360px;
 
     display: flex;
     flex-direction: column;
