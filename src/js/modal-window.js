@@ -1,4 +1,4 @@
-const openBtn = document.getElementById('openModalBtn');
+const openBtn = document.getElementById('/*openModalBtn*/');
 const closeBtn = document.getElementById('closeModalBtn');
 const modalBackdrop = document.getElementById('modalBackdrop');
 
