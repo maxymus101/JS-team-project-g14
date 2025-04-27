@@ -1,3 +1,3 @@
-import { renderProjects } from './js/faq.js';
+import { faqProjects } from './js/faq.js';
 
-document.addEventListener('DOMContentLoaded', renderProjects);
+document.addEventListener('DOMContentLoaded', faqProjects);

@@ -83,6 +83,7 @@
 }
 
 .accordion-content {
+    box-sizing: border-box;
     background-color: #BCDFD1;
     font-family: "Poppins Light", sans-serif;
     font-size: 16px;
@@ -104,7 +105,7 @@
 }
 .accordion-item.open .accordion-content {
     padding: 24px;
-    max-height: 500px;
+    max-height: ;
 }
 
 .accordion-item.open .accordion-header {
@@ -159,31 +160,41 @@
 @media (min-width: 1200px) {
     
 .faq-div.container {
-        flex-direction: row;
-        justify-content: flex-start;
+        display: flex;
+        justify-content: space-between;
         align-items: flex-start;
-        padding-right: 32px;
-    }
+        padding: 0 32px;
+        margin: 0 auto;
+           
+}
 
     .faq-title {
         font-size: 108px;
         line-height: 124px;
         letter-spacing: 1.8px;
-        width: auto;
-        margin-bottom: 0;
+        /*width: auto;*/
+        margin-top: 0;
         padding-right: 32px;
+        width: 520px;
+        height: 372px;
+        padding: 0;
     }
 
     .accordion {
-        width: 55%;
-        margin: 0 656px;
+        width: 592px;
+        height: 744px;
+        align-self: flex-end;
+        margin-top: 290px;
         
     }
 
     .decor {
         display: block;
-        position: absolute;
-        left: 0;
-        transform: translateY(-50%);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
     }
 }
