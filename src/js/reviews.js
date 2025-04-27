@@ -57,7 +57,7 @@ function initSwiper() {
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: true, // важливо для фокусованого прокручування
+      onlyInViewport: true,
       pageUpDown: true,
     },
     mousewheel: true,
@@ -73,6 +73,13 @@ function initSwiper() {
       },
     },
     on: {
+      init() {
+        // Додаємо дизейбл для попередньої кнопки одразу при старті
+        const prevButton = document.querySelector('.swiper-button-prev');
+        if (prevButton) {
+          prevButton.classList.add('swiper-button-disabled');
+        }
+      },
       reachEnd() {
         const nextButton = document.querySelector('.swiper-button-next');
         if (nextButton) nextButton.classList.add('swiper-button-disabled');
@@ -91,7 +98,7 @@ function initSwiper() {
   });
 
   addNavigationListeners();
-  addKeyboardListeners(); // додатково слухаємо стрілки
+  addKeyboardListeners();
 }
 
 function addNavigationListeners() {

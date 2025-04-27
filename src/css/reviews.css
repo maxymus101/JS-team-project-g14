@@ -99,21 +99,38 @@
 
 .reviews-button-prev.swiper-button-disabled,
 .reviews-button-next.swiper-button-disabled {
+  pointer-events: none;
   opacity: 0.4;
   cursor: not-allowed;
   border: 1px solid #e4e5e6;
-  fill: #e4e5e6;
+  stroke: #e4e5e6;
 }
 
 .reviews-icon {
   width: 24px;
   height: 24px;
-  fill: #292929;
+  fill: none;
   stroke: #292929;
+  stroke-width: 2;
 }
 
 .reviews-list .swiper-slide:last-child {
   margin-right: 0 !important;
+}
+
+.error-message {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #292929;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 16px;
+  background-color: #e4e5e6;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 320px;
 }
 
 @media (min-width: 768px) {
