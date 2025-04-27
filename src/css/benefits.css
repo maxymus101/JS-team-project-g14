@@ -4,6 +4,7 @@
     height: 100%;
 
     margin-bottom: 80px;
+    position: relative;
 }
 
 .benefits-bg-decor {
@@ -37,6 +38,10 @@
         max-height: 676px;
         margin-bottom: 164px;
         position: relative;
+    }
+
+    .benefits-div {
+        max-height: 676px;
     }
 
     .benefits-div>.benefits-bg-decor {
@@ -104,11 +109,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .benefits-list {
+    .benefits-wrapper {
         max-width: 1216px;
         max-height: 400px;
 
         transform: translateY(-95px);
+    }
+
+    .benefits-list {
+        max-width: 1216px;
+        max-height: 400px;
     }
 }
 
