@@ -8,17 +8,19 @@
 
 .tech-skills {
   overflow: hidden;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  margin: 0;
   padding: 0;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+
 }
 
 .tech-skills-line {
     display: flex;
     flex-shrink: 0;
-    margin: 0;
     min-width: 100%;
     white-space: nowrap;
     animation: marqueeLine 13s linear infinite;
@@ -65,7 +67,6 @@
     }
     .tech-skills {
         height: 244px !important;
-        margin: 0;
         padding: 0;
     }
 }
