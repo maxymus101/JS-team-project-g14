@@ -107,9 +107,9 @@
 .btn-accordion-question :hover  {
     background-color: #BCDFD1;
 }
-.btn-accordion-question :active {
+/*.btn-accordion-question :active {
     background-color: #BCDFD1;
-}
+}*/
 .accordion-item.open .accordion-content {
     height: auto !important;
     max-height: none !important;
