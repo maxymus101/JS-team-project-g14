@@ -161,27 +161,28 @@
     }
         
     
-        .faq-title {
-            font-family: Impact, sans-serif;
-             font-size: 108px;
-             letter-spacing: 1.8px;
-              line-height: 124px;
-            padding: 60px 0;
-        }
+    .faq-title {
+        font-family: Impact, sans-serif;
+        font-size: 108px;
+        letter-spacing: 1.8px;
+        line-height: 124px;
+        padding: 60px 0;
+    }
 
             
-        .accordion-header {
-            font-family: Poppins Regular, sans-serif;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                line-height: 32px;
-        }
-        .accordion-content{
-            font-family: Poppins Light, sans-serif;
-            font-size: 16px;
-             letter-spacing: 0.2px;
-              line-height: 24px;
-        }
+    .accordion-header {
+        font-family: Poppins Regular, sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        line-height: 32px;
+    }
+
+    .accordion-content{
+        font-family: Poppins Light, sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        line-height: 24px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -213,19 +214,19 @@
 
     .accordion {
         width: 592px;
-       align-self: flex-end;
+        align-self: flex-end;
         margin-top: 290px;
         
     }
 
     .decor {
         display: block;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-           /* top: 50%;
-            transform: translateY(-50%);*/
-            width: 520px;
-            height: 406px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* top: 50%;
+        transform: translateY(-50%);*/
+        width: 520px;
+        height: 408px;
     }
 }
