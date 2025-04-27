@@ -185,14 +185,14 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     
 .faq-div.container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         padding: 0 32px;
-        max-width: 1200px;
+        /*max-width: 1200px;*/
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -216,6 +216,7 @@
         width: 592px;
         align-self: flex-end;
         margin-top: 290px;
+        margin-left: 104px;
         
     }
 
@@ -228,5 +229,6 @@
         transform: translateY(-50%);*/
         width: 520px;
         height: 408px;
+        margin-left: 32px;
     }
 }
