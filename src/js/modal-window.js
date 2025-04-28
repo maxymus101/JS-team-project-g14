@@ -1,6 +1,7 @@
 const openBtn = document.getElementById('.work-together-form-btn');
 const closeBtn = document.getElementById('closeModalBtn');
 const modalBackdrop = document.getElementById('modalBackdrop');
+const form = document.querySelector('.work-together-form');
 
 
 openBtn.onclick = () => {
