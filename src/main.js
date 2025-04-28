@@ -1,2 +1,2 @@
 import {} from 'module';
-import '../src/js/modal-window';
+import './js/modal-window';

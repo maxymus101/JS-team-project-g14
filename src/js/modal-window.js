@@ -1,4 +1,4 @@
-const openBtn = document.getElementById('/*openModalBtn*/');
+const openBtn = document.getElementById('.work-together-form-btn');
 const closeBtn = document.getElementById('closeModalBtn');
 const modalBackdrop = document.getElementById('modalBackdrop');
 
