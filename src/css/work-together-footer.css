@@ -328,3 +328,18 @@ span {
         align-items: center;
     }
 }
+
+/* DarkMode */
+body.dark-mode .work-span,
+body.dark-mode .work-together-parag,
+body.dark-mode .work-together-contact-list-item,
+body.dark-mode .footer-additional,
+body.dark-mode .footer-socials-item,
+body.dark-mode .footer-span,
+body.dark-mode .work-together-form-input::placeholder {
+    color: #F0F0F0;
+}
+
+body.dark-mode .work-together-form-input {
+    background-color: #2a2d32;
+}
