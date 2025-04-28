@@ -1,60 +1,94 @@
 <section class="work-together">
     <div class="work-together-block container">
-        <div class="work-together-textblock">
-            <h2 class="work-together-title"><span>Let’s</span> work together</h2>
-            <p class="work-together-parag">Contact me to transform your ideas into exceptional solutions.</p>
-            <address class="work-together-contact-list">
-                <div class="contact-item">
-                    <svg class="work-contact-list-icon">
-                        <use href="/src/img/svg/icons.svg#icon-phone"></use>
-                    </svg>
-                    <a class="work-together-contact-list-item" href="tel:380904567890">+38 090 456 78 90</a>
-                </div>
-
-                <div class="contact-item">
-                    <svg class="work-contact-list-icon">
-                        <use href="/src/img/svg/icons.svg#icon-mail"></use>
-                    </svg>
-                    <a class="work-together-contact-list-item"
-                        href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-                </div>
-
-                <div class="contact-item">
-                    <svg class="work-contact-list-icon">
-                        <use href="/src/img/svg/icons.svg#icon-location"></use>
-                    </svg>
-                    <a class="work-together-contact-list-item" href="https://www.google.com/maps/place/..."
-                        target="_blank">
-                        USA, New York
-                    </a>
-                </div>
-            </address>
+        <h2 class="work-together-title"><span>Let’s</span> work together</h2>
+        <div class="work-tgthr-img-bg-block">
+            <img src="../img/decorbg4.png" srcset="../img/decorbg.png 768w, ../img/decorbg4.png 1280w"
+                sizes="(max-width: 1279px) 768px, 1280px" alt="Приклад адаптивного зображення"
+                class="work-tgthr-img-bg" />
 
         </div>
-        <form class="work-together-form">
-            <input class="work-together-form-input" type="email" name="email" placeholder="Your email*" required>
-            <textarea class="work-together-form-message" placeholder="Message"></textarea>
-            <button class="work-together-form-btn">SEND MESSAGE</button>
-        </form>
+        <div class="work-together-mainblock">
+            <div class="work-together-textblock">
+                <div class="work-together-contact-textblock">
+                    <p class="work-together-parag">Contact me to transform your
+                        ideas into exceptional solutions.</p>
+                    <address class="work-together-contact-list">
+                        <div class="contact-item">
+                            <svg class="work-contact-list-icon">
+                                <use href="../img/svg/icons.svg#icon-phone"></use>
+                            </svg>
+                            <a class="work-together-contact-list-item" href="tel:380904567890">+38 090 456 78 90</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg class="work-contact-list-icon">
+                                <use href="../img/svg/icons.svg#icon-mail"></use>
+                            </svg>
+                            <a class="work-together-contact-list-item"
+                                href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg class="work-contact-list-icon">
+                                <use href="../img/svg/icons.svg#icon-map"></use>
+                            </svg>
+                            <a class="work-together-contact-list-item" href="https://www.google.com/maps/place/..."
+                                target="_blank">
+                                USA, New York
+                            </a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+            <form class="work-together-form">
+                <label>Invalid email</label>
+                <input class="work-together-form-input" type="email" name="email"
+                    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="Your email*" required>
+
+                <textarea class="work-together-form-message" placeholder="Message"></textarea>
+                <button type="submit" class="work-together-form-btn">SEND MESSAGE</button>
+            </form>
+        </div>
     </div>
 </section>
-<section class="footer">
+<section class="footer ">
     <div class="footer-block container">
-        <h3 class="footer-title"><span>Lloyd</span>Jefferson.</h3>
-        <ul class="footer-socials">
-            <li class="footer-socials-item">
-                <a href="" class="footer-socials-item-link" target="_blank">Instagram</a>
-            </li>
-            <li class="footer-socials-item">
-                <a href="" class="footer-socials-item-link" target="_blank">Facebook</a>
-            </li>
-            <li class="footer-socials-item">
-                <a href="" class="footer-socials-item-link" target="_blank">Linkedin</a>
-            </li>
-            <li class="footer-socials-item">
-                <a href="" class="footer-socials-item-link" target="_blank">GitHub</a>
-            </li>
-        </ul>
+        <div class="footer-main-block">
+            <h3 class="footer-title"><span>Lloyd</span>Jefferson.</h3>
+            <ul class="footer-socials">
+                <li class="footer-socials-item">
+                    <a href="https://www.instagram.com/goitclub/" class="footer-socials-item-link"
+                        target="_blank">Instagram</a>
+                </li>
+                <li class="footer-socials-item">
+                    <a href="https://www.facebook.com/goITclub/" class="footer-socials-item-link"
+                        target="_blank">Facebook</a>
+                </li>
+                <li class="footer-socials-item">
+                    <a href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+                        class="footer-socials-item-link" target="_blank">Linkedin</a>
+                </li>
+                <li class="footer-socials-item">
+                    <a href="https://github.com/maxymus101/JS-team-project-g14" class="footer-socials-item-link"
+                        target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </div>
         <p class="footer-additional">@ Copyright 2024. Made by LloydJefferson</p>
     </div>
 </section>
+<div class="hidden" id="modalBackdrop">
+    <div class="modal" id="modalWindow">
+        <button class="close-btn" id="closeModalBtn">
+            <svg class="modal-icon" width="24" height="24">
+                <use href="../img/svg/icons.svg#icon-arr-rigth"></use>
+            </svg>
+
+        </button>
+        <h2 class="modal-title">THANK YOU FOR YOUR INTEREST IN COOPERATION!</h2>
+        <p class="modal-description">
+            The manager will contact you shortly to discuss further details and opportunities for cooperation. Please
+            stay in touch.
+        </p>
+    </div>
+</div>

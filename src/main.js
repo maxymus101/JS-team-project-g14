@@ -1,1 +1,1 @@
-import {} from 'module';
+import './js/work-tgthr-footer';
