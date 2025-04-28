@@ -250,3 +250,36 @@
         z-index: 1;
     }
 }
+
+
+/*Dark mode*/
+body.dark-mode {
+    background-color: #1e2023;
+
+}
+body.dark-mode .faq-title {
+    color: #f0f0f0;
+}
+ body.dark-mode .accordion-header {
+    color: #f0f0f0;
+ }
+
+body.dark-mode .accordion-header:hover {
+     background-color: #3b3f45;;
+ }
+body.dark-mode .accordion-content {
+    color: #f0f0f0;
+    background-color: #204136;
+}
+
+body.dark-mode .accordion-item.open .accordion-header {
+    background-color: #204136;
+}
+
+body.dark-mode .btn-accordion-question :hover {
+    background-color: #204136;
+}
+
+body.dark-mode .btn-accordion-question :active {
+    background-color: #204136;
+}
