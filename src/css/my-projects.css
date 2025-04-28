@@ -1,12 +1,20 @@
+.body {
+  background-color: #f0f0f0;
+}
 .projects-section {
-  padding: 60px 0;
+  padding: 0;
   text-align: center;
 }
 
 .section-title {
-  font-size: 32px;
-  font-weight: 700;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #292929;
+  margin-bottom: 40px;
 }
 
 .section-title span {
@@ -16,18 +24,17 @@
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 40px;
   align-items: center;
 }
 
 .project-card {
   max-width: 704px;
   width: 100%;
-  background: #fff;
+  background: transparent;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,49 +48,69 @@
 .project-info {
   margin-top: 16px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .project-text {
+  width: 100%;
   text-align: left;
 }
 
 .project-stack {
-  font-size: 14px;
-  color: #5c5c5c;
-  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.project-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .project-title {
-  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33333;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
   color: #292929;
-  font-weight: 600;
 }
 
 .visit-btn {
+  margin-top: 16px;
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  background-color: #f3f3f3;
+  background-color: #e4e5e6;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #292929;
   transition: background-color 0.3s;
+  align-self: flex-end;
+}
+
+.visit-btn:hover {
+  background-color: #bbbbbb;
 }
 
 .visit-icon {
   margin-left: 8px;
-  transform: rotate(45deg);
 }
 
-.visit-btn:hover {
-  background-color: #e0e0e0;
-}
 .load-more-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
   margin: 60px auto 0;
   display: block;
   background: transparent;
@@ -106,14 +133,41 @@
   background: transparent;
 }
 
+/* Планшеты и выше */
 @media (min-width: 768px) {
+  .section-title {
+    margin-bottom: 60px;
+  }
+
   .projects-list {
-    gap: 32px;
+    gap: 60px;
+  }
+
+  .project-title-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .visit-btn {
+    margin-top: 0;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
   }
 }
 
+/* Десктопы */
 @media (min-width: 1280px) {
+  .section-title {
+    margin-bottom: 80px;
+  }
+
   .projects-list {
-    gap: 40px;
+    gap: 80px;
   }
 }

@@ -12,20 +12,23 @@ function renderProjects() {
   nextProjects.forEach(({ title, image, stack, link }) => {
     const projectCard = document.createElement('li');
     projectCard.className = 'project-card';
-
     projectCard.innerHTML = `
       <img src="${image}" alt="${title}" class="project-image" />
       <div class="project-info">
         <div class="project-text">
           <p class="project-stack">${stack}</p>
-          <h3 class="project-title">${title}</h3>
+          <div class="project-title-wrapper">
+            <h3 class="project-title">${title}</h3>
+            <a href="${link}" target="_blank" class="visit-btn">
+             VISIT
+             <svg class="visit-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75 16.25L16.25 1.75M16.25 1.75H2.75M16.25 1.75V15.25" stroke="#00B068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+            </a>
+          </div>
         </div>
-        <a href="${link}" target="_blank" class="visit-btn">
-          VISIT <svg class="visit-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00B068" d="M14 3h7v7h-2V6.41l-9.29 9.3l-1.42-1.42L17.59 5H14V3Z"/></svg>
-        </a>
       </div>
     `;
-
     projectsList.appendChild(projectCard);
   });
 

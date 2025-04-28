@@ -13,19 +13,19 @@ export const projectsData = [
   {
     title: "Wallet Webservice",
     image: walletImg,
-    stack: "React, JavaScript, Node.js, Git",
+    stack: "React, JavaScript, Node JS, Git",
     link: "https://yourwalletlink.com",
   },
   {
     title: "Green Harvest Webservice",
     image: greenHarvestImg,
-    stack: "React, JavaScript, Node.js, Git",
+    stack: "React, JavaScript, Node JS, Git",
     link: "https://yourgreenharvestlink.com",
   },
   {
     title: "Energy Flow Webservice",
     image: energyFlowImg,
-    stack: "React, SCSS, Node.js",
+    stack: "React, SCSS, Node JS, Git",
     link: "https://yourenergyflowlink.com",
   },
   {
@@ -55,13 +55,13 @@ export const projectsData = [
   {
     title: "Fruitbox Online Store",
     image: fruitboxImg,
-    stack: "React, Tailwind, Node.js",
+    stack: "React, Tailwind, Node JS",
     link: "https://yourfruitboxlink.com",
   },
   {
     title: "English Excellence Webservice",
     image: englishExcellenceImg,
-    stack: "React, JavaScript, Node.js, Git",
+    stack: "React, JavaScript, Node JS, Git",
     link: "https://yourenglishlink.com",
   },
   {
