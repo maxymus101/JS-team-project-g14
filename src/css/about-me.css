@@ -1,3 +1,7 @@
+/* body {
+    max-width: 100vw;
+} */
+
 .about-me{
     margin-bottom: 80px;
 }
@@ -49,7 +53,6 @@
    letter-spacing: 0.03em;
    color: #292929;
    margin-bottom: 24px;
-   
    }
    
    .education-continer {
@@ -126,7 +129,7 @@
    
    /*about-me tablet*/
    @media screen and (min-width: 768px) {
-    
+
           .about-me-title {
           font-size: 108px;
           line-height: 1.1;
@@ -194,7 +197,7 @@
            line-height: 1.3;
            letter-spacing: 0.01em;
            }
-    .bio-item-cont {
+    /* .bio-item-cont {
             display: flex;
             flex-direction: column;
           }
@@ -202,7 +205,7 @@
     .bio-item-cont1 {
             margin-bottom: 24px; 
           
-          }
+          } */
     .decor-img {
         margin-left: 120px;
         margin-top: 500px;
@@ -221,6 +224,237 @@
            }
          
        }
+/* .about-me {
+    margin-bottom: 80px;
+}
+   .about-me-title {
+       font-family: "Impact", sans-serif;
+   font-weight: 400;
+   font-size: 52px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #292929;
+   display: flex;
+   align-items: center;
+   margin-bottom: 40px;
+   }
+   .about-me-span {
+       color: #00B068;
+       margin-left: 15px;
+   }
+   
+   .content-image-container {
+       display: block;
+   align-items: center;
+   margin-bottom: 40px;    
+   }
+   .bio-container {
+       display: flex;
+       align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: column;
+   text-align: left;
+   margin-bottom: 24px;
+   }
+   .bio-title {
+       font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 1.25;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   color: #292929;
+   margin-bottom: 32px;
+   }
+   .bio-item-cont
+   .bio-item-cont1 {
+       font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 16px; 
+   line-height: 1.5;
+   letter-spacing: 0.03em;
+   color: #292929;
+   margin-bottom: 12px;
+   
+   }
+   
+   .education-continer {
+   margin-bottom: 40px;
+   }
+
+   .education-title {
+       font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 1.25;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   color: #292929;
+  margin-bottom: 32px;
+   
+   }
+
+   .education-list {
+       font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.03em;
+   color: #292929;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   list-style: disc;
+   list-style-position: outside;
+   margin-left: 20px;
+   }  
+   
+   .education-list li::marker {
+       color: #00B068;   
+   }
+   
+   .role-title {
+       font-family: "Poppins", sans-serif;
+       font-weight: 500;
+       font-size: 32px;
+       line-height: 1.25;
+       letter-spacing: 0.02em;
+       text-transform: uppercase;
+       color: #292929;
+       margin-bottom: 32px;
+   }
+
+   .role-list {
+       font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.03em;
+   color: #292929;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   list-style: disc;
+   list-style-position: outside;
+   margin-left: 20px;
+   }
+
+   .role-list li::marker {
+       color: #00B068;
+   }
+   
+   @media screen and (max-width: 767px) {
+       .decor-img {
+           display: none;
+       }
+   } */
+   
+   
+   /*about-me tablet*/
+   /* @media screen and (min-width: 768px) {
+    .about-me {
+        margin-bottom: 124px;
+    }
+          .about-me-title {
+          font-size: 108px;
+          line-height: 1.1;
+          letter-spacing: 0.02em;
+          }
+          .bio-img-container {
+            display: flex;
+            align-items: flex-start; 
+            position: relative;
+            gap: 32px; 
+          }
+          .content-image-container {
+            flex: 0 0 auto; 
+            margin-top: 375px; 
+          }
+          .bio-container{
+            margin-bottom: 12px;
+          }
+          .bio-title {   
+            font-size: 36px;
+            line-height: 1.3;
+            letter-spacing: 0.01em;
+            }
+          .bio-item-cont {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .decor-img{
+           position: absolute;
+           margin-top: 680px;
+          }
+          .educ-role-container{
+            display: flex;
+            align-items: flex-start; 
+            gap: 32px;
+           
+          }
+         .education-continer{
+            width: 336px;
+         }
+          .education-title {
+          font-size: 36px;
+          line-height: 1.3;
+          letter-spacing: 0.01em;
+          }
+        
+       }   */
+       
+       /*about-me desctop*/
+    /* @media screen and (min-width: 1280px) {
+        .about-me {
+            margin-bottom: 164px;
+        }
+        .bio-img-container {
+            margin-left: 208px;
+            gap: 136px; 
+           }
+        .content-image-container {
+            margin-top: 265px; 
+            
+           }
+        .bio-container{
+            width: 488px;
+            height: 408px;
+            margin-bottom: 40px;
+          }
+        .bio-title {   
+           font-size: 36px;
+           line-height: 1.3;
+           letter-spacing: 0.01em;
+           }
+    .bio-item-cont {
+            display: flex;
+            flex-direction: column;
+            
+          }
+          
+    .bio-item-cont1 {
+            margin-bottom: 24px; 
+          }
+    .decor-img {
+        margin-left: 120px;
+        margin-top: 500px;
+         }
+    .educ-role-container{
+        margin-left: 208px;
+           gap: 136px;
+           }
+           .education-continer{
+            width: 384px;
+         }
+           .education-title {
+           font-size: 36px;
+           line-height: 1.3;
+           letter-spacing: 0.01em;
+           }
+         
+       } */
    
        
            
