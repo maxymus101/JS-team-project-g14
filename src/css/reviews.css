@@ -106,6 +106,12 @@
   stroke: #e4e5e6;
 }
 
+.reviews-button-prev:hover,
+.reviews-button-next:hover {
+  background-color: #e4e5e6;
+  border: 1px solid #292929;
+}
+
 .reviews-icon {
   width: 24px;
   height: 24px;
@@ -119,7 +125,6 @@
 }
 
 .error-message {
-  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
@@ -149,12 +154,6 @@
     max-width: 704px;
     height: 224px;
   }
-
-  .reviews-button-prev:hover,
-  .reviews-button-next:hover {
-    background-color: #e4e5e6;
-    border: 1px solid #292929;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -174,5 +173,54 @@
   .reviews-button-next {
     width: 48px;
     height: 48px;
+    padding: 12px;
   }
+}
+
+/* Dark mode */
+
+body.dark-mode .reviews-section {
+  background-color: #1e2023;
+}
+
+body.dark-mode .reviews-title {
+  color: #f0f0f0;
+}
+
+body.dark-mode .reviews-card {
+  background-color: #2a2d32;
+}
+
+body.dark-mode .reviews-text {
+  color: #f0f0f0;
+}
+
+body.dark-mode .reviews-author-name {
+  color: #f0f0f0;
+}
+
+body.dark-mode .reviews-button-prev,
+body.dark-mode .reviews-button-next {
+  border: 1px solid #2a2d32;
+}
+
+body.dark-mode .reviews-button-prev.swiper-button-disabled,
+body.dark-mode .reviews-button-next.swiper-button-disabled {
+  border: 1px solid #2a2d32;
+  stroke: #2a2d32;
+}
+
+body.dark-mode .reviews-button-prev:hover,
+body.dark-mode .reviews-button-next:hover {
+  background-color: #2a2d32;
+  border: 1px solid #1e2023;
+}
+
+body.dark-mode .reviews-icon {
+  stroke: #f0f0f0;
+}
+
+body.dark-mode .error-message {
+  color: #f0f0f0;
+  background-color: #2a2d32;
 }

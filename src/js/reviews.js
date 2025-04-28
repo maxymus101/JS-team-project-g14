@@ -1,5 +1,7 @@
 import Swiper from 'swiper';
 import 'swiper/css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 import { fetchReviews } from './api.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,7 +23,12 @@ async function initReviews() {
   } catch (error) {
     console.error('Fetching error:', error);
     list.innerHTML = '<p class="error-message">Not found</p>';
-    alert('Oops! Failed to load reviews. Please try again later.');
+    iziToast.error({
+      title: 'Error',
+      message: 'Oops! Failed to load reviews. Please try again later.',
+      position: 'topRight',
+      timeout: 5000,
+    });
   }
 }
 
