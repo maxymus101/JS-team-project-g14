@@ -1,4 +1,4 @@
-const openBtn = document.getElementById('.work-together-form-btn');
+const openBtn = document.querySelector('.work-together-form-btn');
 const closeBtn = document.getElementById('closeModalBtn');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const form = document.querySelector('.work-together-form');
@@ -26,7 +26,8 @@ document.addEventListener('keydown', (e) => {
 });
 
 function closeModal() {
-  modalOBackdrop.style.display = 'none';
+  modalBackdrop.style.display = 'none';
   document.body.style.overflow = 'auto';
 }
 
+export default initModal;

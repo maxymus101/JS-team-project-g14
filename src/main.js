@@ -1,2 +1,1 @@
-import {} from 'module';
-import './js/modal-window';
+import project from './js/modal-window';
