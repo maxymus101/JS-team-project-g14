@@ -207,15 +207,16 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        
-        .faq-header {
-                position: relative;
-                width: 520px;
-                height: auto;
-            }
 }
+        
+        
+.faq-header {
+        position: relative;
+        width: 520px;
+        height: auto;
+            }
 
-    .faq-title {
+ .faq-title {
         font-size: 108px;
         line-height: 124px;
         letter-spacing: 1.8px;
@@ -227,7 +228,6 @@
         padding: 0;
         position: relative;
         z-index: 2;
-        margin-bottom: 240px;
     }
 
     .accordion {
