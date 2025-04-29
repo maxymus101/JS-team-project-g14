@@ -1,4 +1,7 @@
 
+import './js/work-tgthr-footer';
+import {} from 'module';
+
 // Heasder and Hero
 
 import { toggleDarkMode, updateHeroPictureOnLoad, setupMobileMenuListeners } from './js/header-hero.js';
@@ -14,12 +17,11 @@ window.addEventListener('resize', updateHeroPictureOnLoad);
 // Setup mobile menu listeners
 setupMobileMenuListeners();
  
-import {} from 'module';
+
 
 import './js/reviews.js';
 import { faqProjects } from './js/faq.js';
 
 document.addEventListener('DOMContentLoaded', faqProjects);
-import {} from 'module';
+// import {} from 'module';
 import './js/projects-render';
-
