@@ -5,6 +5,9 @@ h4,
 h5,
 h6,
 p {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   margin: 0;
 }
 

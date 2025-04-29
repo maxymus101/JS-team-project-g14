@@ -1,0 +1,149 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.tech-skills-title {
+    display: none;
+}
+
+.tech-skills {
+  overflow: hidden;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.tech-skills-line {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation: marqueeLine 13s linear infinite;
+    padding: 32px 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    gap: 12px;
+}
+
+.tech-skills-grey {
+  background-color: #E4E5E6;
+  color: #00B068;
+  transform: rotate(2deg);
+}
+
+.tech-skills-inner-grey, 
+.tech-skills-inner-green {
+  display: flex;
+}
+
+.tech-skills-inner-grey .tech-skills-point {
+  color: #000000;
+}
+
+.tech-skills-grey .tech-skills-line {
+  animation: marqueeLine 11s linear infinite;
+}
+
+.tech-skills-point {
+  color: #00B068;
+}
+
+.tech-skills-green {
+  background-color: #BCDFD1;
+  color: #292929
+}
+
+.tech-skills-inner .tech-skills-line {
+  color: #000000;
+}
+
+
+
+/* @media screen and (min-width: 480px) {
+    .tech-skills .tech-skills-line {
+        font-size: 32px !important;
+        padding: 32px 0 !important;
+        letter-spacing: 0.5px;
+    }
+    .tech-skills {
+        height: 244px !important;
+        padding: 0;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+  .tech-skills {
+      font-size: 36px;
+      height: 280px;
+      margin-bottom: 124px;
+    }
+
+    .tech-skills-line {
+        padding: 40px 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+.tech-skills {
+  font-size: 36px;
+  height: 280px;
+  margin-bottom: 164px;
+}
+
+.tech-skills-line {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+span.tech-skills-point {
+  margin: 12px 15px;
+}
+}
+
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+  
+                                     /* .dark-mode */
+
+/* body.dark-mode .tech-skills-green {
+    background-color: #204136;
+    color: #F0F0F0;  
+} 
+
+body.dark-mode .tech-skills-inner-green .tech-skills-point {
+    color: #14C57C;
+}                                    
+
+bode.dark-mode .tech-skills-grey {
+    background-color: #2A2D32;
+    color: #14C57C;
+}
+
+bode.dark-mode .tech-skills-inner-grey .tech-skills-point {
+    color: #F0F0F0;
+} */
+

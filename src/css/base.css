@@ -1,5 +1,5 @@
 :root {
-  font-family: "Poppins", Impact, sans-serif;
+  font-family: "Poppins", "Impact", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -43,4 +43,16 @@ main:has(.back-link) {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+button {
+  background-color: #00B068;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 173px;
+  height: 48px;
+}
+
+button:hover {
+  background-color: #009156;
 }
