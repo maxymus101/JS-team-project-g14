@@ -4,13 +4,14 @@
 .projects-section {
   padding: 0;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .section-title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
-  font-size: 52px;
-  line-height: 1.23077;
+  font-size: 32px;
+  line-height: 125%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
@@ -62,6 +63,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
+  margin-bottom: 16px;
 }
 
 .project-title-wrapper {
@@ -158,6 +160,11 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
+    min-width: 125px;
+    justify-content: center;
+  }
+  .projects-section {
+    margin-bottom: 124px;
   }
 }
 
@@ -169,5 +176,9 @@
 
   .projects-list {
     gap: 80px;
+  }
+
+  .projects-section {
+    margin-bottom: 164px;
   }
 }
