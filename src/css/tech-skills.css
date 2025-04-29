@@ -24,9 +24,12 @@
     min-width: 100%;
     white-space: nowrap;
     animation: marqueeLine 13s linear infinite;
-    gap: 16px;
+    padding: 32px 16px;
     align-items: center;
     justify-content: center;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+    gap: 12px;
 }
 
 .tech-skills-grey {
