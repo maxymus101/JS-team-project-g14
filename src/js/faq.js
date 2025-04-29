@@ -1,16 +1,15 @@
-
-import Accordion from "accordion-js";
-import "accordion-js/dist/accordion.min.css";
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 export function faqProjects() {
   const accordion = new Accordion('.accordion', {
-    duration: 300,
+    duration: 700,
     showMultiple: false,
     openOnInit: [0],
     elementClass: 'accordion-item',
     triggerClass: 'accordion-header',
     panelClass: 'accordion-content',
-    activeClass: 'open'
+    activeClass: 'open',
   });
 
   const accordionItems = document.querySelectorAll('.accordion-item');
@@ -22,12 +21,14 @@ export function faqProjects() {
     const useElement = headerButton.querySelector('.icon-dropdown use');
 
     /*іконка на початку*/
-     if (useElement) {
-      useElement.setAttribute('href', index === 0 && item.classList.contains('open')
-        ? './img/svg/icons.svg#icon-button-down' 
-        : './img/svg/icons.svg#icon-button-down'
-       );
-        }
+    if (useElement) {
+      useElement.setAttribute(
+        'href',
+        index === 0 && item.classList.contains('open')
+          ? './img/svg/icons.svg#icon-button-down'
+          : './img/svg/icons.svg#icon-button-down'
+      );
+    }
 
     /*click*/
     headerButton.addEventListener('click', () => {
@@ -40,10 +41,13 @@ export function faqProjects() {
       /*зміна іконки*/
       if (useElement) {
         const isOpen = item.classList.contains('open');
-        useElement.setAttribute('href', isOpen ? './img/svg/icons.svg#icon-button-up' : './img/svg/icons.svg#icon-button-down');
+        useElement.setAttribute(
+          'href',
+          isOpen
+            ? './img/svg/icons.svg#icon-button-up'
+            : './img/svg/icons.svg#icon-button-down'
+        );
       }
     });
   });
 }
-
-    
