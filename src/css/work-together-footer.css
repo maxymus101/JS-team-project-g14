@@ -72,8 +72,8 @@ button {
 }
 
 .work-contact-list-icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     stroke: #292929;
     fill: #00B068;
 }
@@ -226,6 +226,7 @@ span {
         font-size: 108px;
         line-height: 1.14815;
         letter-spacing: 0.02em;
+        margin-bottom: 60px;
     }
 
     .work-together-contact-list {
@@ -282,6 +283,7 @@ span {
     .work-together-title {
 
         max-width: 513px;
+        margin-bottom: 80px;
     }
 
     .work-tgthr-img-bg {
