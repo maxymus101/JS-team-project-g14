@@ -230,3 +230,17 @@
            }
          
        }
+/* DarkMode */
+body.dark-mode .about-me {
+    background-color: #2a2d32;
+}
+
+body.dark-mode .about-me-title,
+body.dark-mode .bio-title,
+body.dark-mode .bio-item-cont,
+body.dark-mode .education-continer,
+body.dark-mode .role-container
+ {
+    color: #F0F0F0;
+}
+
