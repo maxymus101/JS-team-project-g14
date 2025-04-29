@@ -3,9 +3,6 @@ body {
 
 }
 
-.container {
-    min-width: 300px
-}
 
 a,
 button {
@@ -22,7 +19,6 @@ button {
 }
 
 .work-together-block {
-    padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
 }
@@ -32,7 +28,7 @@ button {
 }
 
 .work-together-title {
-    margin-bottom: 46px;
+    margin-bottom: 40px;
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -293,6 +289,10 @@ span {
 
     .work-together-parag {
         margin-bottom: 120px;
+    }
+
+    .footer-socials {
+        margin-bottom: 44px;
     }
 
     .work-together-block {
