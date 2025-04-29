@@ -1,3 +1,4 @@
+
 .about-me{
     margin-bottom: 80px;
 }
@@ -28,7 +29,7 @@
        display: flex;
    justify-content: left;
    flex-direction: column;
-   
+   margin-bottom: 40px;
    }
    .bio-title {
        font-family: "Poppins", sans-serif;
@@ -40,17 +41,19 @@
    color: #292929;
    margin-bottom: 32px;
    }
-   .bio-item-cont
-   .bio-item-cont1 {
-       font-family: "Poppins", sans-serif;
+   .bio-item-cont {
+    font-family: "Poppins", sans-serif;
    font-weight: 300;
    font-size: 16px; 
    line-height: 1.5;
    letter-spacing: 0.03em;
    color: #292929;
+   
+   }
+   .bio-item-cont1 {
    margin-bottom: 24px;
    }
-   
+  
    .education-continer {
    margin-bottom: 40px;
    }
@@ -125,7 +128,9 @@
    
    /*about-me tablet*/
    @media screen and (min-width: 768px) {
-
+    .about-me{
+        margin-bottom: 124px;
+    }
           .about-me-title {
           font-size: 108px;
           line-height: 1.1;
@@ -151,19 +156,15 @@
             display: flex;
             flex-direction: column;
           }
-
-          .bio-item-cont1 {
-            margin-bottom: 12px; 
-          }
           .decor-img{
            position: absolute;
            margin-top: 680px;
           }
           .educ-role-container{
             display: flex;
-            align-items: flex-start; 
+            align-items: flex-start;  
             gap: 32px;
-           
+           margin-bottom: 80px;
           }
          .education-continer{
             width: 336px;
@@ -173,15 +174,23 @@
           line-height: 1.3;
           letter-spacing: 0.01em;
           }
+          .education-list {
+            gap: 16px;
+        
+            } 
+        .role-list {
+        gap: 16px;
+        }
         
        }  
        
        /*about-me desctop*/
     @media screen and (min-width: 1280px) {
-             
+        .about-me{
+            margin-bottom: 164px;
+        }
     .bio-img-container {
-            margin-left: 212px;
-
+            margin-left: 208px;
             gap: 136px; 
            }
     .content-image-container {
@@ -200,10 +209,6 @@
             width: 488px;
           }
           
-    .bio-item-cont1 {
-            margin-bottom: 24px; 
-          
-          }
     .decor-img {
         margin-left: 120px;
         margin-top: 500px;
