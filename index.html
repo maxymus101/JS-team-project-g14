@@ -21,11 +21,192 @@
     <script type="module" crossorigin src="/JS-team-project-g14/index.js"></script>
     <link rel="modulepreload" crossorigin href="/JS-team-project-g14/assets/vendor-BbYFLxaw.js">
     <link rel="stylesheet" crossorigin href="/JS-team-project-g14/assets/vendor-DabqXDpv.css">
-    <link rel="stylesheet" crossorigin href="/JS-team-project-g14/assets/index-DT75LSzA.css">
+    <link rel="stylesheet" crossorigin href="/JS-team-project-g14/assets/index-BJrRs21S.css">
   </head>
 
   <body>
-    
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container hdr-container">
+        <nav class="navigation">
+          <a class="company-logo" href="/index.html"
+            >Lloyd<span class="logo-accent">Jefferson.</span></a
+          >
+          <div class="nav-right">
+            <button
+              type="button"
+              id="toggle-background"
+              class="toggle-background"
+            >
+              <svg class="toggle-icon-white">
+                <use
+                  href="../img/svg/icons.svg#icon-change-to-light"
+                  width="48"
+                  height="24"
+                ></use>
+              </svg>
+              <svg class="toggle-icon-black is-hidden">
+                <use
+                  href="../img/svg/icons.svg#icon-change-to-dark"
+                  width="48"
+                  height="24"
+                ></use>
+              </svg>
+            </button>
+            <ul class="hdr-nav-menu">
+              <li class="hdr-nav-menu-item">
+                <a href="#about-me" class="nav-menu-item-link">About me</a>
+              </li>
+              <li class="hdr-nav-menu-item">
+                <a href="#my-projects" class="nav-menu-item-link">Projects</a>
+              </li>
+              <li class="hdr-nav-menu-item">
+                <a href="#work-together-footer" class="nav-menu-item-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button
+          type="button"
+          id="mobile-burger-menu"
+          class="mobile-burger-manu"
+        >
+          <svg class="mobile-burger-menu-icon">
+            <use
+              href="../img/svg/icons.svg#burger-menu"
+              width="22"
+              height="16"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="background-image-mobile"></div>
+        <div class="background-image-tablet"></div>
+        <div class="background-image-desktop"></div>
+        <div class="title-img-wraper">
+          <h1 class="hero-title">
+            Hello, I am <br /><span class="hero-title-accent"
+              >Fullstack<br />
+              developer</span
+            >
+          </h1>
+          <div>
+            <picture class="hero-picture" id="hero-picture">
+              <source
+                id="hero-source"
+                srcset="../img/imghero-picture@1x.jpg 1x, ../img/imghero-picture@2x.jpg 2x"
+              />
+              <img
+                id="hero-img"
+                src="../img/imghero-picture@2x.jpg"
+                alt="portrait-with-laptop"
+                class="hero-image"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="refferral-wrapper">
+          <div class="projects-refferal">
+            <a class="arrow-link" href="#work-together-footer">
+              <svg class="arrow-icon" width="30" height="16">
+                <use href="../img/svg/icons.svg#green-arrow"></use>
+              </svg>
+              <div class="rectangle-wraper">
+                <span class="projects-refferal-link">Order the project</span>
+                <div class="refferal-rectangle"></div>
+              </div>
+              <div class="spacer"></div>
+            </a>
+          </div>
+          <p class="hero-text">
+            I work with people all over the world to create
+            <span class="accent-hero-text">impressive</span> and
+            <span class="accent-hero-text">functional websites</span> that
+            reflect each client’s unique personality.
+          </p>
+        </div>
+        <nav class="menu">
+          <ul class="social-menu">
+            <li>
+              <a
+                class="social-menu-item"
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="social-menu-item"
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="social-menu-item"
+                href="https://www.linkedin.com/school/goit-start-your-career-in-it "
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="social-menu-item"
+                href="https://github.com/maxymus101/JS-team-project-g14/tree/main/src/css"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- #regin Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="container container-mobile-menu">
+        <div class="mobile-menu-header">
+          <a class="company-logo" href="/index.html"
+            >Lloyd<span class="logo-accent">Jefferson.</span></a
+          >
+          <button class="modal-close-btn" type="button">
+            <svg class="modal-close-icon" width="32" height="32">
+              <use href="../img/svg/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-main-manu">
+          <div class="mobile-menu-background"></div>
+          <ul class="mobil-menu-list">
+            <li class="list-item">
+              <a class="nav-link studio" href="#about-me">About me</a>
+            </li>
+            <li class="list-item">
+              <a class="nav-link" href="#my-projects">Projects</a>
+            </li>
+            <li class="list-item">
+              <a class="nav-link" href="#work-together-footer">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
 
     <main>
       <!-- Loads the specified .html file -->
@@ -204,7 +385,7 @@
           >
           <button class="btn-accordion-question">
             <svg class="icon-dropdown" width="32" height="32">
-              <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-button-up"></use>
+              <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-button-up"></use>
             </svg>
           </button>
         </div>
@@ -221,7 +402,7 @@
           >
           <button class="btn-accordion-question">
             <svg class="icon-dropdown" width="32" height="32">
-              <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-button-down"></use>
+              <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-button-down"></use>
             </svg>
           </button>
         </div>
@@ -239,7 +420,7 @@
           >
           <button class="btn-accordion-question">
             <svg class="icon-dropdown" width="32" height="32">
-              <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-button-down"></use>
+              <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-button-down"></use>
             </svg>
           </button>
         </div>
@@ -255,7 +436,7 @@
           <span class="accordion-question">How can I contact you?</span>
           <button class="btn-accordion-question">
             <svg class="icon-dropdown" width="32" height="32">
-              <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-button-down"></use>
+              <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-button-down"></use>
             </svg>
           </button>
         </div>
@@ -272,7 +453,7 @@
           >
           <button class="btn-accordion-question">
             <svg class="icon-dropdown" width="32" height="32">
-              <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-button-down"></use>
+              <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-button-down"></use>
             </svg>
           </button>
         </div>
@@ -290,7 +471,7 @@
           >
           <button class="btn-accordion-question">
             <svg class="icon-dropdown" width="32" height="32">
-              <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-button-down"></use>
+              <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-button-down"></use>
             </svg>
           </button>
         </div>
@@ -320,7 +501,7 @@
           aria-label="Previous review"
         >
           <svg class="reviews-icon" width="24" height="24">
-            <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-arrow-left"></use>
+            <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-arrow-left"></use>
           </svg>
         </button>
 
@@ -331,7 +512,7 @@
           aria-label="Next review"
         >
           <svg class="reviews-icon" width="24" height="24">
-            <use href="/JS-team-project-g14/assets/icons-Ojm0P9-7.svg#icon-arrow-right"></use>
+            <use href="/JS-team-project-g14/assets/icons-CKup_4Oe.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </div>
