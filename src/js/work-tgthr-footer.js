@@ -27,7 +27,7 @@ async function handleSubmitWork(event) {
     window.localStorage.setItem('MainKey', JSON.stringify(inputedValue));
     try {
       const response = await axios.post(
-        'https://portfolio-js.b.goit.study/api/request',
+        'https://portfolio-js.b.goit.study/api/requests',
         {
           email: inputedValue.email,
           comment: inputedValue.message,
