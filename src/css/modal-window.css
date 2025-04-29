@@ -27,6 +27,7 @@
 border-radius: 16px;
 padding: 48px 32px;
 width: 320px;
+max-height: 328px;
 display: flex;
 align-items: flex-start;
 justify-content: flex-start;
@@ -93,6 +94,7 @@ stroke: #292929;
 
     .modal-title {
         line-height: 1.6;
+        font-size: 20px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: center;
@@ -100,7 +102,14 @@ stroke: #292929;
         padding: 0;
         margin-bottom: 16px;
         margin-top: 0px;
+        max-width: 256px; 
       }
+      @media screen and (min-width: 768px) {
+        .modal-title {
+          max-width: 364px;
+        }
+      }
+     
    
       .modal-description {
         font-weight: 300;
