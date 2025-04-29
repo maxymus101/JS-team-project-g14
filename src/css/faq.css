@@ -1,6 +1,6 @@
 .faq-section {
     min-width: 320px;
-    height: 1120px;
+    min-height: 1120px;
     margin-bottom: 80px;
 }
 
@@ -152,23 +152,6 @@
     display: none;
 }
 
-/*@media (min-width: 360px) and (max-width: 767px) {
-    .faq-title {
-        font-size: 52px;
-        line-height: 123%;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-    }
-    .accordion-header {
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .accordion-content {
-        font-size: 16px;
-        letter-spacing: 0.2px;
-        line-height: 24px;
-    }
-}*/
 
 @media (min-width: 768px) {
     .faq-section{
@@ -178,6 +161,7 @@
     .faq-div.container {
         padding-left: 20px;
         padding-right: 20px;
+        /*margin-bottom: 124px;*/
         box-sizing: border-box;
     }
         
@@ -209,6 +193,9 @@
         line-height: 24px;
     }
 }
+
+
+
 
 @media (min-width: 1280px) {
     .faq-section {
