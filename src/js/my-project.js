@@ -1,13 +1,13 @@
-import walletImg from '../img/projects/wallet.png';
-import greenHarvestImg from '../img/projects/green-harvest.png';
-import energyFlowImg from '../img/projects/energy-flow.png';
-import powerPulseImg from '../img/projects/power-pulse.png';
-import miminoImg from '../img/projects/mimino.png';
-import vyshyvankaImg from '../img/projects/vyshyvanka.png';
-import chegoImg from '../img/projects/chego.png';
-import fruitboxImg from '../img/projects/fruitbox.png';
-import englishExcellenceImg from '../img/projects/english-excellence.png';
-import starlightImg from '../img/projects/starlight.png';
+import walletImg from '../img/projects/wallet.webp';
+import greenHarvestImg from '../img/projects/green-harvest.webp';
+import energyFlowImg from '../img/projects/energy-flow.webp';
+import powerPulseImg from '../img/projects/power-pulse.webp';
+import miminoImg from '../img/projects/mimino.webp';
+import vyshyvankaImg from '../img/projects/vyshyvanka.webp';
+import chegoImg from '../img/projects/chego.webp';
+import fruitboxImg from '../img/projects/fruitbox.webp';
+import englishExcellenceImg from '../img/projects/english-excellence.webp';
+import starlightImg from '../img/projects/starlight.webp';
 
 export const projectsData = [
   {
