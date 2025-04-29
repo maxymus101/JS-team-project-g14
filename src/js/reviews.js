@@ -29,6 +29,12 @@ async function initReviews() {
       position: 'topRight',
       timeout: 5000,
     });
+
+    // Приховуємо навігаційні кнопки
+    const buttonsBlock = document.querySelector('.reviews-buttons');
+    if (buttonsBlock) {
+      buttonsBlock.style.display = 'none';
+    }
   }
 }
 
@@ -52,7 +58,7 @@ function renderReviews(reviews) {
   });
 }
 
-let swiperInstance; // Змінна для доступу до Swiper зовні
+let swiperInstance; // Змінна для доступу до Swiper
 
 function initSwiper() {
   swiperInstance = new Swiper('.reviews-swiper', {
