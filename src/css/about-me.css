@@ -19,7 +19,7 @@
        color: #00B068;
        margin-left: 15px;
    }
-   
+
    .content-image-container {
        display: block;
    align-items: center;
@@ -144,7 +144,8 @@
           }
           .content-image-container {
             flex: 0 0 auto; 
-            margin-top: 375px; 
+            margin-top: 370px; 
+           
           }
           
           .bio-title {   
@@ -157,14 +158,16 @@
             flex-direction: column;
           }
           .decor-img{
+            max-width: 336px;
            position: absolute;
-           margin-top: 680px;
+           top: 670px;
+           right: -10px;
           }
           .educ-role-container{
             display: flex;
             align-items: flex-start;  
             gap: 32px;
-           margin-bottom: 80px;
+           
           }
          .education-continer{
             width: 336px;
@@ -209,9 +212,9 @@
             width: 488px;
           }
           
-    .decor-img {
-        margin-left: 120px;
-        margin-top: 500px;
+    .decor-img { 
+        top: 510px;
+        right: 15px;
          }
     .educ-role-container{
         margin-left: 208px;
