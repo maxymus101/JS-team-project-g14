@@ -6,8 +6,8 @@
 
 .faq-div.container {
  /*max-width: 360px;*/
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin-bottom: 80px;
+    padding: 0 20px;
 }
 
 .faq-title {
@@ -57,10 +57,18 @@
     cursor: pointer;
     padding: 28px 24px;
     background-color: #f0f0f0;
-    font-family: "Poppins Regular", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #292929;
+    font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55556;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #292929;
+    gap: 16px;
+}
+
+.accordion-question {
+    max-width: 224px;
 }
 
 .accordion-header:hover {
@@ -81,6 +89,8 @@
     justify-content: center;
     width: 32px;
     height: 32px;
+    border-radius: 8px;
+    align-self: flex-start;
 }
 .btn-accordion-question:focus {
     outline: none;
@@ -93,12 +103,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
+    stroke: #292929;
+    fill: none;
 }
 
 .accordion-content {
     box-sizing: border-box;
     background-color: #BCDFD1;
-    font-family: "Poppins Light", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 24px;
@@ -120,7 +133,7 @@
     height: auto !important;
     max-height: none !important;
     overflow: visible !important;
-    padding: 24px;
+    padding: 0 24px 24px;
     display: block !important;
     border-radius: 0 0 16px 16px;
         
@@ -133,6 +146,7 @@
 
 .accordion-item.open .btn-accordion-question {
     transform: rotate(180deg);
+
 }
 
 .decor {
@@ -158,14 +172,14 @@
 }*/
 
 @media (min-width: 768px) {
-    .faq-section{
+    /*.faq-section{
         margin-bottom: 124px;
-    }
+    }*/
 
     .faq-div.container {
         padding-left: 20px;
         padding-right: 20px;
-        margin: 0 auto;
+        margin-bottom: 124px;
         box-sizing: border-box;
     }
         
@@ -175,19 +189,23 @@
         font-size: 108px;
         letter-spacing: 1.8px;
         line-height: 124px;
-        padding: 60px 0;
+        margin-bottom: 60px;
     }
 
             
     .accordion-header {
-        font-family: Poppins Regular, sans-serif;
+        font-family: Poppins, sans-serif;
         font-size: 20px;
         letter-spacing: 0.5px;
         line-height: 32px;
     }
 
+    .accordion-question {
+        max-width: 600px;
+    }
+
     .accordion-content{
-        font-family: Poppins Light, sans-serif;
+        font-family: Poppins, sans-serif;
         font-size: 16px;
         letter-spacing: 0.2px;
         line-height: 24px;
@@ -196,7 +214,7 @@
 
 @media (min-width: 1280px) {
     .faq-section {
-            margin-bottom: 92px;
+            
             position: relative;
         }
 
@@ -206,8 +224,7 @@
         align-items: flex-start;
         padding: 0 32px;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 164px;
 }
         
         
@@ -237,6 +254,9 @@
         margin-top: 290px;
         margin-left: 98px;
         
+    }
+    .accordion-question {
+        max-width: 488px;
     }
 
     .decor {
