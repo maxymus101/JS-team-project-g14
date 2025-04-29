@@ -15,11 +15,13 @@ export function faqProjects() {
 
   const accordionItems = document.querySelectorAll('.accordion-item');
 
+  /*обробка кожного акордеону*/
   accordionItems.forEach((item, index) => {
     const headerButton = item.querySelector('.accordion-header');
-    const contentElement = item.querySelector('.accordion-content'); 
+    const contentElement = item.querySelector('.accordion-content');
     const useElement = headerButton.querySelector('.icon-dropdown use');
 
+    /*іконка на початку*/
      if (useElement) {
       useElement.setAttribute('href', index === 0 && item.classList.contains('open')
         ? './img/svg/icons.svg#icon-button-down' 
@@ -27,6 +29,7 @@ export function faqProjects() {
        );
         }
 
+    /*click*/
     headerButton.addEventListener('click', () => {
       setTimeout(() => {
         if (item.classList.contains('open') && contentElement) {
@@ -34,6 +37,7 @@ export function faqProjects() {
         }
       }, accordion.settings.duration + 50);
 
+      /*зміна іконки*/
       if (useElement) {
         const isOpen = item.classList.contains('open');
         useElement.setAttribute('href', isOpen ? './img/svg/icons.svg#icon-button-up' : './img/svg/icons.svg#icon-button-down');
@@ -41,3 +45,5 @@ export function faqProjects() {
     });
   });
 }
+
+    

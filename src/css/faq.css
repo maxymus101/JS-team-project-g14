@@ -55,7 +55,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 16px 24px;
+    padding: 28px 24px;
     background-color: #f0f0f0;
     font-family: "Poppins Regular", sans-serif;
     font-size: 18px;
@@ -243,7 +243,7 @@
         display: block;
         position: absolute;
         left: 0;
-        top: calc(124px + 240px + (60px * 2));
+        top: 612px;
         width: 520px;
         height: 406px;
         pointer-events: none;
