@@ -62,16 +62,10 @@ html {
   list-style: none;
   display: none;
   align-items: center;
-  gap: 30px; /* space between nav items */
+  gap: 40px;
   margin: 0;
   padding: 0;
 }
-
-/* @media screen and (max-width: 767.9px) {
-  .hdr-nav-menu .toggle-background {
-    display: block;
-  }
-} */
 
 .hdr-nav-menu-item .nav-menu-item-link {
   text-decoration: none;
@@ -186,12 +180,23 @@ html {
 
 @media screen and (min-width: 1280px) {
   .hero-container {
-    padding-top: 80px;
-    padding-bottom: 96px;
+    padding-top: 88px;
+    margin-bottom: 164px;
   }
 }
 
-.background-image-mobile-menu {
+@media screen and (min-width: 678px) {
+  .hero-container {
+    padding-top: 88px;
+    margin-bottom: 124px;
+  }
+}
+
+@media screen and (max-width: 677.9px) {
+  .hero-container {
+    padding-top: 12px;
+    margin-bottom: 80px;
+  }
 }
 
 .hero-title {
@@ -214,8 +219,8 @@ html {
   gap: 10px; /* some space between arrow and text */
   position: relative; /* if you need it */
   text-decoration: none;
-  margin-top: 72px;
-  margin-bottom: 72px;
+  /* margin-top: 72px;
+  margin-bottom: 72px; */
 }
 .arrow-icon {
 }
@@ -256,7 +261,7 @@ html {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .accent-hero-text {
   color: #00b068;
@@ -280,31 +285,6 @@ html {
   line-height: 150%;
   letter-spacing: 0.03em;
   color: #292929;
-}
-
-.background-image-tablet,
-.background-image-mobile,
-.background-image-desktop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: -1;
-  opacity: 0.4;
-}
-
-.background-image-mobile-menu {
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* backgrounds shouldn't block clicks */
-  z-index: -1;
 }
 
 .background-image-mobile {
@@ -387,9 +367,18 @@ html {
     letter-spacing: 0.05em;
   }
 
-  .hero .hero-text {
+  .refferral-wrapper {
+    margin-top: 92px;
     margin-bottom: 104px;
   }
+}
+
+.refferral-wrapper {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
 @media screen and (max-width: 1279.9px) {
@@ -414,28 +403,27 @@ html {
     padding-bottom: 32px;
   }
 
-  .hero-text {
+  /* .hero-text {
     margin-bottom: 96px;
-  }
+  } */
 
   .refferal-rectangle {
     width: 261px;
     height: 96px;
   }
 
-  .arrow-link {
+  /* .arrow-link {
     margin-top: 96px;
     margin-bottom: 72px;
-  }
+  } */
 }
 
 .title-img-wraper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  /* gap: 72px; */
+  /* justify-content: center; */
+  /* align-items: center; */
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -453,7 +441,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 72px;
     width: 100%;
@@ -495,10 +483,10 @@ html {
     width: 136px;
   }
 
-  .arrow-link {
+  /* .arrow-link {
     margin-top: 112px;
     margin-bottom: 128px;
-  }
+  } */
 }
 
 .is-hidden {
@@ -669,10 +657,10 @@ body.no-scroll {
 
 /* Dark mode */
 
-/* body.dark-mode {
+body.dark-mode {
   background-color: #1e2023;
   color: #f0f0f0;
-} */
+}
 
 body.dark-mode .hero {
   background-color: #1e2023;
@@ -776,5 +764,117 @@ body.dark-mode .mobile-burger-menu-icon {
 
     position: static;
     background-color: transparent;
+  }
+}
+
+/* Background images */
+
+/* MOBILE */
+.background-image-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../img/decorfirst-bg-mobile@1x.png'),
+    url('../img/decorsecond-bg-mobile@1x.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 40% 80px, 40% 436px;
+  background-size: 352px 265px, 170px 132px;
+  pointer-events: none;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .background-image-tablet {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background-image: url('../img/decorfirst-bg-tablet@1x.png'),
+      url('../img/decorsecond-bg-tablet@1x.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 30% 180px, 50% 280px;
+    background-size: 364px 287px, 364px 282px;
+    pointer-events: none;
+  }
+
+  .background-image-mobile {
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .background-image-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../img/decorfirst-bg-mobile@1x.png'),
+      url('../img/decorsecond-bg-desktop@1x.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 180px, 50% 80px;
+    background-size: 364px 287px, 364px 282px;
+    pointer-events: none;
+  }
+
+  .background-image-tablet {
+    display: none;
+  }
+}
+
+.mobile-menu-background {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/decorsecond-bg-mobile@2x.png'),
+    url('../img/decorsecond-bg-mobile@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  pointer-events: none; /* so it doesn't block clicks */
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  body.dark-mode .hero {
+    background-image: url('../img/decorfirst-bg-tablet@1x.png'),
+      url('../img/decorsecond-bg-tablet@1x.png');
+    background-position: 30% 180px, 50% 280px;
+    background-size: 364px 287px, 364px 282px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body.dark-mode .hero {
+    background-image: url('../img/decorfisrt-bg-desktop@1x.png'),
+      url('../img/decorsecond-bg-desktop@1x.png');
+    background-position: 50% 180px, 50% 80px;
+    background-size: 364px 287px, 364px 282px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  body.dark-mode .hero {
+    background-image: url('../img/decorfirst-bg-tablet@1x.png'),
+      url('../img/decorsecond-bg-tablet@1x.png');
+    background-position: calc(50% - 50px) 150px, calc(50% + 20px) 300px;
+
+    background-size: 364px 287px, 364px 282px;
+    background-repeat: no-repeat;
   }
 }
