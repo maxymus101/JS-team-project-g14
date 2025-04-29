@@ -10,8 +10,8 @@
 .section-title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 125%;
+  font-size: 52px;
+  line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
@@ -139,6 +139,8 @@
 @media (min-width: 768px) {
   .section-title {
     margin-bottom: 60px;
+    font-size: 108px;
+    line-height: 1.14815;
   }
 
   .projects-list {
@@ -172,6 +174,8 @@
 @media (min-width: 1280px) {
   .section-title {
     margin-bottom: 80px;
+    font-size: 1008px;
+    line-height: 1.14815;
   }
 
   .projects-list {
