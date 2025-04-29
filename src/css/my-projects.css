@@ -30,7 +30,7 @@
 }
 
 .project-card {
-  max-width: 704px;
+  max-width: 1008px;
   width: 100%;
   background: transparent;
   border-radius: 12px;
@@ -174,7 +174,7 @@
 @media (min-width: 1280px) {
   .section-title {
     margin-bottom: 80px;
-    font-size: 1008px;
+    font-size: 108px;
     line-height: 1.14815;
   }
 
