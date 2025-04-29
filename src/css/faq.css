@@ -35,7 +35,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    border-radius: 5px;
+    border-radius: 16px;
     background-color: #f0f0f0;
 }
 
@@ -105,7 +105,6 @@
     color: #292929;
     text-align: left;
     padding: 0 24px;
-   
     overflow: hidden;
    /* transition: max-height 0.4s ease, padding 0.3s ease;*/
 }
@@ -123,12 +122,13 @@
     overflow: visible !important;
     padding: 24px;
     display: block !important;
+    border-radius: 0 0 16px 16px;
         
 }
 
 .accordion-item.open .accordion-header {
     background-color: #BCDFD1;
-    border-radius: 5px 5px 0 0;
+    border-radius: 16px 16px 0 0;
 }
 
 .accordion-item.open .btn-accordion-question {
@@ -235,7 +235,7 @@
         width: 592px;
         align-self: flex-end;
         margin-top: 290px;
-        margin-left: 104px;
+       /* margin-left: 104px;*/
         
     }
 
