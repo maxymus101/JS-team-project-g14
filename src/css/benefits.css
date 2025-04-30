@@ -199,3 +199,10 @@
 .art-subtext {
     max-height: 72px;
 }
+
+
+body.dark-mode .benfits-title,
+body.dark-mode .benefits-subtext,
+body.dark-mode .benefits-subtitle {
+    color: #F0F0F0;
+}
