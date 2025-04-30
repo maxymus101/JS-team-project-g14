@@ -267,6 +267,8 @@ body.dark-mode .faq-title {
 }
  body.dark-mode .accordion-header {
     color: #f0f0f0;
+    background-color: #3b3f45;
+
  }
 
 body.dark-mode .accordion-item {
