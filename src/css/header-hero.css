@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .hdr-container {
   display: flex;
   align-items: center;
@@ -134,7 +133,6 @@ html {
 .social-menu {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-
 }
 
 /* === Burger Menu === */
@@ -155,7 +153,7 @@ html {
 /* === Responsive Media Queries === */
 
 @media screen and (min-width: 768px) {
-  .header .hdr-nav-menu {
+  .hdr-nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,7 +325,8 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 .background1-tablet {
   position: absolute;
@@ -926,4 +925,8 @@ body.dark-mode .mobile-burger-menu-icon {
     background-size: 364px 287px, 364px 282px;
     background-repeat: no-repeat;
   }
+}
+
+.hero-title {
+  white-space: nowrap;
 }
