@@ -5,12 +5,13 @@
 }
 
 .faq-div.container {
- 
+
     padding: 0 20px;
 }
 
 .faq-title {
-    font-family: Impact,sans-serif;;
+    font-family: Impact, sans-serif;
+    ;
     font-size: 52px;
     line-height: 123%;
     letter-spacing: 0.03em;
@@ -20,13 +21,13 @@
     /*max-width: 320px;*/
     width: 100%;
     margin-bottom: 40px;
-    
+
 }
 
 .faq-title span.accent {
     color: #00B068;
 }
- 
+
 
 .accordion {
     display: block;
@@ -46,7 +47,7 @@
 
 .accordion-item.open {
     overflow: visible;
-  
+
 }
 
 .accordion-header {
@@ -57,12 +58,12 @@
     padding: 28px 24px;
     background-color: #f0f0f0;
     font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.55556;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #292929;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55556;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
     gap: 16px;
 }
 
@@ -91,6 +92,7 @@
     border-radius: 8px;
     align-self: flex-start;
 }
+
 .btn-accordion-question:focus {
     outline: none;
     box-shadow: none;
@@ -118,15 +120,16 @@
     text-align: left;
     padding: 0 24px;
     overflow: hidden;
-   /* transition: max-height 0.4s ease, padding 0.3s ease;*/
+    /* transition: max-height 0.4s ease, padding 0.3s ease;*/
 }
 
-.btn-accordion-question :hover  {
+/* .btn-accordion-question :hover {
     background-color: #BCDFD1;
-}
-.btn-accordion-question :active {
+} */
+
+/* .btn-accordion-question :active {
     background-color: #BCDFD1;
-}
+} */
 
 .accordion-item.open .accordion-content {
     height: auto !important;
@@ -135,7 +138,7 @@
     padding: 0 24px 24px;
     display: block !important;
     border-radius: 0 0 16px 16px;
-        
+
 }
 
 .accordion-item.open .accordion-header {
@@ -154,7 +157,7 @@
 
 
 @media (min-width: 768px) {
-    .faq-section{
+    .faq-section {
         margin-bottom: 124px;
     }
 
@@ -164,8 +167,8 @@
         /*margin-bottom: 124px;*/
         box-sizing: border-box;
     }
-        
-    
+
+
     .faq-title {
         font-family: Impact, sans-serif;
         font-size: 108px;
@@ -174,7 +177,7 @@
         margin-bottom: 60px;
     }
 
-            
+
     .accordion-header {
         font-family: Poppins, sans-serif;
         font-size: 20px;
@@ -186,7 +189,7 @@
         max-width: 600px;
     }
 
-    .accordion-content{
+    .accordion-content {
         font-family: Poppins, sans-serif;
         font-size: 16px;
         letter-spacing: 0.2px;
@@ -199,27 +202,27 @@
 
 @media (min-width: 1280px) {
     .faq-section {
-            margin-bottom: 164px;
-            position: relative;
-        }
+        margin-bottom: 164px;
+        position: relative;
+    }
 
-.faq-div.container {
+    .faq-div.container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         padding: 0 32px;
         width: 100%;
-        
-}
-        
-        
-.faq-header {
+
+    }
+
+
+    .faq-header {
         position: relative;
         width: 520px;
         height: auto;
-            }
+    }
 
- .faq-title {
+    .faq-title {
         font-size: 108px;
         line-height: 124px;
         letter-spacing: 1.8px;
@@ -227,7 +230,7 @@
         margin-top: 0;
         padding-right: 32px;
         width: 520px;
-      /*height: 372px;*/
+        /*height: 372px;*/
         padding: 0;
         position: relative;
         z-index: 2;
@@ -238,8 +241,9 @@
         align-self: flex-end;
         margin-top: 290px;
         margin-left: 98px;
-        
+
     }
+
     .accordion-question {
         max-width: 488px;
     }
@@ -263,22 +267,24 @@ body.dark-mode {
 }
 
 body.dark-mode .faq-title,
-body.dark-mode .accordion-question
- {
+body.dark-mode .accordion-question {
     color: #f0f0f0;
 }
- body.dark-mode .accordion-header {
+
+body.dark-mode .accordion-header {
     color: #f0f0f0;
     background-color: #1E2023;
- }
+}
 
 body.dark-mode .accordion-item {
     background-color: #1e2023;
- }
+}
 
 body.dark-mode .accordion-header:hover {
-     background-color: #3b3f45;;
- }
+    background-color: #3b3f45;
+    ;
+}
+
 body.dark-mode .accordion-content {
     color: #f0f0f0;
     background-color: #204136;
@@ -302,3 +308,10 @@ body.dark-mode .icon-updown {
 }
 
 
+.btn-accordion-question:hover,
+.btn-accordion-question:active,
+.btn-accordion-question:focus {
+    background: none;
+    outline: none;
+    box-shadow: none;
+}
