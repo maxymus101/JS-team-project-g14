@@ -194,3 +194,13 @@ body.dark-mode .section-title,
 body.dark-mode .load-more-btn {
   color: #f0f0f0;
 }
+
+body.dark-mode title,
+body.dark-mode stack {
+  color: #f0f0f0;
+}
+
+body.dark-mode .visit-btn {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
