@@ -195,8 +195,8 @@ body.dark-mode .load-more-btn {
   color: #f0f0f0;
 }
 
-body.dark-mode title,
-body.dark-mode stack {
+body.dark-mode .project-title,
+body.dark-mode .project-stack {
   color: #f0f0f0;
 }
 
