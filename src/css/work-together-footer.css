@@ -175,8 +175,7 @@ input:invalid {
 
 }
 
-.footer-title {
-    margin-bottom: 32px;
+.footer-company-logo {
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 32px;
@@ -190,6 +189,7 @@ input:invalid {
     flex-direction: column;
     gap: 24px;
     margin-bottom: 40px;
+    margin-top: 32px;
 }
 
 span {
@@ -340,13 +340,24 @@ body.dark-mode .work-span,
 body.dark-mode .work-together-parag,
 body.dark-mode .work-together-contact-list-item,
 body.dark-mode .footer-additional,
-body.dark-mode .footer-socials-item,
+body.dark-mode .footer-socials-item-link,
 body.dark-mode .footer-span,
-body.dark-mode .work-together-form-input::placeholder {
+body.dark-mode .work-together-form-input::placeholder,
+body.dark-mode .work-together-form-message {
     color: #F0F0F0;
+}
+
+body.dark-mode .work-together-title,
+body.dark-mode .footer-company-logo {
+    color: #009156;
 }
 
 body.dark-mode .work-together-form-input,
 body.dark-mode .work-together-form-message {
     background-color: #2a2d32;
+}
+
+body.dark-mode .footer-socials-item-link:hover,
+body.dark-mode .work-together-contact-list-item:hover {
+    color: #14C57C;
 }
