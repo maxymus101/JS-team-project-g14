@@ -23,7 +23,7 @@
     
 }
 
-.faq-title .accent {
+.faq-title span.accent {
     color: #00B068;
 }
  
@@ -40,7 +40,7 @@
 
 .accordion-item {
     border-bottom: 1px solid #e0e0e0;
-   overflow: hidden;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
@@ -260,15 +260,16 @@
 /*Dark mode*/
 body.dark-mode {
     background-color: #1e2023;
-
 }
-body.dark-mode .faq-title {
+
+body.dark-mode .faq-title,
+body.dark-mode .accordion-question
+ {
     color: #f0f0f0;
 }
  body.dark-mode .accordion-header {
     color: #f0f0f0;
-    background-color: #3b3f45;
-
+    background-color: #1E2023;
  }
 
 body.dark-mode .accordion-item {
@@ -294,3 +295,10 @@ body.dark-mode .btn-accordion-question :hover {
 body.dark-mode .btn-accordion-question :active {
     background-color: #204136;
 }
+
+body.dark-mode .icon-dropdown,
+body.dark-mode .icon-updown {
+    stroke: #f0f0f0;
+}
+
+
