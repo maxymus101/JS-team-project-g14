@@ -1,4 +1,12 @@
 // header-hero.js
+import heroLight1x from '../img/imghero-picture@1x.jpg';
+import heroLight2x from '../img/imghero-picture@2x.jpg';
+import heroDarkDesktop1x from '../img/imgdark-bg-hero-desktop@1x.webp';
+import heroDarkDesktop2x from '../img/imgdark-bg-hero-desktop@2x.webp';
+import heroDarkTablet1x from '../img/imgdark-bg-hero-tablet@1x.webp';
+import heroDarkTablet2x from '../img/imgdark-bg-hero-tablet@2x.webp';
+import heroDarkMobile1x from '../img/imgdark-bg-hero-mobile@1x.webp';
+import heroDarkMobile2x from '../img/imgdark-bg-hero-mobile@2x.webp';
 
 const toggleButton = document.getElementById('toggle-background');
 const whiteIcon = document.querySelector('.toggle-icon-white');
@@ -23,22 +31,22 @@ export function toggleDarkMode() {
 
   if (document.body.classList.contains('dark-mode')) {
     if (isDesktop) {
-      heroSource.srcset = "/img/imgdark-bg-hero-desktop@1x.webp 1x, /img/imgdark-bg-hero-desktop@2x.webp 2x";
-      heroImg.src = "/img/imgdark-bg-hero-desktop@1x.webp";
+      heroSource.srcset = `${heroDarkDesktop1x} 1x, ${heroDarkDesktop2x} 2x`;
+      heroImg.src = heroDarkDesktop1x;
       heroPicture.style.display = "block";
     } else if (isTablet) {
-      heroSource.srcset = "/img/imgdark-bg-hero-tablet@1x.webp 1x, /img/imgdark-bg-hero-tablet@2x.webp 2x";
-      heroImg.src = "/img/imgdark-bg-hero-tablet@1x.webp";
+      heroSource.srcset = `${heroDarkTablet1x} 1x, ${heroDarkTablet2x} 2x`;
+      heroImg.src = heroDarkTablet1x;
       heroPicture.style.display = "block";
     } else {
-      heroSource.srcset = "/img/imgdark-bg-hero-mobile@1x.webp 1x, /img/imgdark-bg-hero-mobile@2x.webp 2x";
-      heroImg.src = "/img/imgdark-bg-hero-mobile@1x.webp";
+      heroSource.srcset = `${heroDarkMobile1x} 1x, ${heroDarkMobile2x} 2x`;
+      heroImg.src = heroDarkMobile1x;
       heroPicture.style.display = "block";
     }
   } else {
     if (isDesktop) {
-      heroSource.srcset = "/img/imghero-picture@1x.jpg 1x, /img/imghero-picture@2x.jpg 2x";
-      heroImg.src = "/img/imghero-picture@1x.jpg";
+      heroSource.srcset = `${heroLight1x} 1x, ${heroLight2x} 2x`;
+      heroImg.src = heroLight1x;
       heroPicture.style.display = "block";
     } else {
       heroPicture.style.display = "none";
