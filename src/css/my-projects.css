@@ -186,3 +186,11 @@
     margin-bottom: 164px;
   }
 }
+
+
+          /* Dark theme */
+
+body.dark-mode .section-title,
+body.dark-mode .load-more-btn {
+  color: #f0f0f0;
+}
