@@ -870,6 +870,10 @@ body.dark-mode .mobile-burger-menu-icon {
   .background-image-tablet {
     display: none;
   }
+ 
+ .hero-image {
+  border-radius: 32px;
+ }
 }
 
 .mobile-menu-background {
