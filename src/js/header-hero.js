@@ -17,23 +17,27 @@ export function toggleDarkMode() {
   whiteIcon.classList.toggle('is-hidden');
   blackIcon.classList.toggle('is-hidden');
 
+  const isDesktop = window.innerWidth >= 1280;
+  const isTablet = window.innerWidth >= 768 && window.innerWidth < 1280;
+  const isMobile = window.innerWidth < 768;
+
   if (document.body.classList.contains('dark-mode')) {
-    if (window.innerWidth >= 1280) {
-      heroSource.srcset = "/img/imgdark-bg-hero-desktop@1x.webp 1x, ../img/imgdark-bg-hero-desktop@2x.webp 2x";
+    if (isDesktop) {
+      heroSource.srcset = "/img/imgdark-bg-hero-desktop@1x.webp 1x, /img/imgdark-bg-hero-desktop@2x.webp 2x";
       heroImg.src = "/img/imgdark-bg-hero-desktop@1x.webp";
       heroPicture.style.display = "block";
-    } else if (window.innerWidth >= 768) {
-      heroSource.srcset = "/img/imgdark-bg-hero-tablet@1x.webp 1x, ../img/imgdark-bg-hero-tablet@2x.webp 2x";
-      heroImg.src = "/img/imgdark-bg-hero-tablet@1x.jpg";
+    } else if (isTablet) {
+      heroSource.srcset = "/img/imgdark-bg-hero-tablet@1x.webp 1x, /img/imgdark-bg-hero-tablet@2x.webp 2x";
+      heroImg.src = "/img/imgdark-bg-hero-tablet@1x.webp";
       heroPicture.style.display = "block";
     } else {
-      heroSource.srcset = "/img/imgdark-bg-hero-mobile@1x.webp 1x, ../img/imgdark-bg-hero-mobile@2x.webp 2x";
+      heroSource.srcset = "/img/imgdark-bg-hero-mobile@1x.webp 1x, /img/imgdark-bg-hero-mobile@2x.webp 2x";
       heroImg.src = "/img/imgdark-bg-hero-mobile@1x.webp";
       heroPicture.style.display = "block";
     }
   } else {
-    if (window.innerWidth >= 1280) {
-      heroSource.srcset = "/img/imghero-picture@1x.jpg 1x, ../img/imghero-picture@2x.jpg 2x";
+    if (isDesktop) {
+      heroSource.srcset = "/img/imghero-picture@1x.jpg 1x, /img/imghero-picture@2x.jpg 2x";
       heroImg.src = "/img/imghero-picture@1x.jpg";
       heroPicture.style.display = "block";
     } else {
@@ -41,6 +45,7 @@ export function toggleDarkMode() {
     }
   }
 }
+
 
 // Function to update hero picture on page load or resize
 export function updateHeroPictureOnLoad() {

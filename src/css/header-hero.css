@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .hdr-container {
   display: flex;
   align-items: center;
@@ -134,7 +133,6 @@ html {
 .social-menu {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-
 }
 
 /* === Burger Menu === */
