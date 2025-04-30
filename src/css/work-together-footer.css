@@ -14,6 +14,10 @@ button {
         transform 0.4s ease;
 }
 
+.company-logo {
+    color: #00B068;
+}
+
 .work-together {
     margin: auto;
 }
@@ -342,6 +346,7 @@ body.dark-mode .work-together-form-input::placeholder {
     color: #F0F0F0;
 }
 
-body.dark-mode .work-together-form-input {
+body.dark-mode .work-together-form-input,
+body.dark-mode .work-together-form-message {
     background-color: #2a2d32;
 }
