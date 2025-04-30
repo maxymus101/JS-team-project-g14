@@ -131,6 +131,11 @@ html {
   height: 24px;
 }
 
+.social-menu {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
 /* === Burger Menu === */
 .mobile-burger-manu {
   background: none;
@@ -870,10 +875,10 @@ body.dark-mode .mobile-burger-menu-icon {
   .background-image-tablet {
     display: none;
   }
- 
- .hero-image {
-  border-radius: 32px;
- }
+
+  .hero-image {
+    border-radius: 32px;
+  }
 }
 
 .mobile-menu-background {
