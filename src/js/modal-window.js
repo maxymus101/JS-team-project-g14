@@ -3,23 +3,20 @@ const closeBtn = document.getElementById('closeModalBtn');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const form = document.querySelector('.work-together-form');
 
-
 openBtn.onclick = () => {
   modalBackdrop.style.display = 'flex';
-  document.body.style.overflow = 'hidden'; 
+  document.body.style.overflow = 'hidden';
 };
-
 
 closeBtn.onclick = closeModal;
 
-
-modalBackdrop.onclick = (e) => {
+modalBackdrop.onclick = e => {
   if (e.target === modalBackdrop) {
     closeModal();
   }
 };
 
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeModal();
   }
@@ -30,4 +27,4 @@ function closeModal() {
   document.body.style.overflow = 'auto';
 }
 
-export default initModal;
+//export default initModal;

@@ -2,7 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 export function faqProjects() {
-  const accordion = new Accordion('.accordion', {
+  const accordionSettings = {
     duration: 700,
     showMultiple: false,
     openOnInit: [0],
@@ -10,7 +10,9 @@ export function faqProjects() {
     triggerClass: 'accordion-header',
     panelClass: 'accordion-content',
     activeClass: 'open',
-  });
+  };
+
+  const accordion = new Accordion('.accordion', accordionSettings);
 
   const accordionItems = document.querySelectorAll('.accordion-item');
 
@@ -36,9 +38,7 @@ export function faqProjects() {
         if (item.classList.contains('open') && contentElement) {
           contentElement.style.height = 'auto';
         }
-      }, accordion.settings.duration + 50);
-
-      /*зміна іконки*/
+      }, accordionSettings.duration + 50);
       if (useElement) {
         const isOpen = item.classList.contains('open');
         useElement.setAttribute(
