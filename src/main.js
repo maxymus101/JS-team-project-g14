@@ -1,8 +1,11 @@
-
+import project from './js/modal-window';
 import './js/work-tgthr-footer';
+import './js/reviews.js';
+import { faqProjects } from './js/faq.js';
+import './js/projects-render';
 import {} from 'module';
 
-// Heasder and Hero
+// Header and Hero
 
 import { toggleDarkMode, updateHeroPictureOnLoad, setupMobileMenuListeners } from './js/header-hero.js';
 
@@ -19,9 +22,8 @@ setupMobileMenuListeners();
  
 
 
-import './js/reviews.js';
-import { faqProjects } from './js/faq.js';
+
+
 
 document.addEventListener('DOMContentLoaded', faqProjects);
 // import {} from 'module';
-import './js/projects-render';
