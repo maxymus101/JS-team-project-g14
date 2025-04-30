@@ -6,8 +6,9 @@ html {
 
 .hdr-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding: 20px;
 }
 
@@ -36,14 +37,14 @@ html {
   justify-content: center;
 }
 
-.navigation {
+.header-navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
 }
-
-.company-logo {
+.mobile-menu-header .company-logo,
+.header-navigation .company-logo {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -89,12 +90,6 @@ html {
 
 .toggle-icon-white {
   display: block;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-right {
@@ -153,11 +148,9 @@ html {
 /* === Responsive Media Queries === */
 
 @media screen and (min-width: 768px) {
-
-  .header,
   .hdr-nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
 
@@ -210,7 +203,7 @@ html {
 
 .hero-title {
   font-weight: 400;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 125%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -327,7 +320,8 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 .background1-tablet {
   position: absolute;
@@ -572,10 +566,6 @@ body.no-scroll {
   align-items: center;
 }
 
-.mobile-menu-header .company-logo {
-  margin-right: 108px;
-}
-
 .mobil-menu-list {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -779,7 +769,7 @@ body.dark-mode .mobile-burger-menu-icon {
     object-fit: cover;
 
     position: absolute;
-    top: 340px;
+    top: 200px;
     left: 464px;
     background-color: transparent;
   }
@@ -926,4 +916,14 @@ body.dark-mode .mobile-burger-menu-icon {
     background-size: 364px 287px, 364px 282px;
     background-repeat: no-repeat;
   }
+}
+
+.hero-title {
+  white-space: nowrap;
+}
+
+.mobile-menu-header {
+  display: flex; /* important */
+  flex-direction: row;
+  justify-content: space-between;
 }
