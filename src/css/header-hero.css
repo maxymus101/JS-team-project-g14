@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .hdr-container {
   display: flex;
   align-items: center;
@@ -77,7 +78,8 @@ html {
 }
 
 .nav-menu-item-link:hover {
-  color: #00b068; /* slight green hover like your accent color */
+  color: #00b068;
+  /* slight green hover like your accent color */
 }
 
 /* When dark mode is active on the button */
@@ -135,7 +137,8 @@ html {
   border: none;
   cursor: pointer;
   padding: 0;
-  display: none; /* hide by default (desktop/tablet) */
+  display: none;
+  /* hide by default (desktop/tablet) */
 }
 
 .mobile-burger-menu-icon {
@@ -209,6 +212,7 @@ html {
   font-family: 'Impact', sans-serif;
   /* margin-top: 96px; */
 }
+
 .hero-title-accent {
   color: #00b068;
 }
@@ -216,17 +220,19 @@ html {
 .arrow-link {
   display: flex;
   align-items: center;
-  gap: 10px; /* some space between arrow and text */
-  position: relative; /* if you need it */
+  gap: 10px;
+  /* some space between arrow and text */
+  position: relative;
+  /* if you need it */
   text-decoration: none;
   /* margin-top: 72px;
   margin-bottom: 72px; */
 }
-.arrow-icon {
-}
+
 .projects-refferal-link {
   position: relative;
-  z-index: 2; /* make sure text is above the rectangle */
+  z-index: 2;
+  /* make sure text is above the rectangle */
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -235,6 +241,7 @@ html {
   text-transform: uppercase;
   color: #292929;
 }
+
 .refferal-rectangle {
   border-radius: 16px;
   width: 165px;
@@ -243,13 +250,16 @@ html {
   position: absolute;
   top: 50%;
   left: 60%;
-  transform: translate(-5%, -50%); /* centers it */
+  transform: translate(-5%, -50%);
+  /* centers it */
   border-radius: 12px;
-  z-index: 1; /* behind the text */
+  z-index: 1;
+  /* behind the text */
 }
 
 .rectangle-wraper {
-  position: relative; /* so the rectangle can be absolutely positioned inside */
+  position: relative;
+  /* so the rectangle can be absolutely positioned inside */
   display: inline-block;
 }
 
@@ -263,6 +273,7 @@ html {
   color: #292929;
   /* margin-bottom: 72px; */
 }
+
 .accent-hero-text {
   color: #00b068;
 }
@@ -278,6 +289,7 @@ html {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .social-menu-item {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -291,48 +303,59 @@ html {
   display: flex;
   flex-direction: column;
 }
+
 .background1-mobile {
   position: absolute;
-  top: 80px; /* Position first background near top */
+  top: 80px;
+  /* Position first background near top */
   left: 40%;
   transform: translateX(-50%);
 }
+
 .background2-mobile {
   position: absolute;
   top: 436px;
   left: 40%;
   transform: translateX(-50%);
 }
+
 .background-image-tablet {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-}
+@media screen and (min-width: 768px) {}
+
 .background1-tablet {
   position: absolute;
   top: 180px;
   left: 30%;
   transform: translateX(-70%);
 }
+
 .background2-tablet {
   position: absolute;
-  top: 280px; /* Position first background near top */
+  top: 280px;
+  /* Position first background near top */
   left: 50%;
   transform: translateY(50%);
 }
+
 .background-image-desktop {
   display: none;
 }
+
 .background1-desktop {
   position: absolute;
-  top: 180px; /* Position first background near top */
+  top: 180px;
+  /* Position first background near top */
   left: 50%;
   transform: translateX(-50%);
 }
+
 .background2-desktop {
   position: absolute;
-  top: 80px; /* Position first background near top */
+  top: 80px;
+  /* Position first background near top */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -341,12 +364,15 @@ html {
   .background-image-tablet {
     display: block;
   }
+
   .background-image-mobile {
     display: none;
   }
+
   .background-image-desktop {
     display: none;
   }
+
   .hero-title {
     font-family: 'Impact', sans-serif;
     font-weight: 400;
@@ -479,6 +505,7 @@ html {
     letter-spacing: 0.03em;
     align-self: flex-end;
   }
+
   .spacer {
     width: 136px;
   }
@@ -500,7 +527,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f5f5f5; /* Light gray like in your screenshot */
+  background-color: #f5f5f5;
+  /* Light gray like in your screenshot */
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -568,7 +596,8 @@ body.no-scroll {
 }
 
 .nav-link:hover {
-  color: #00b068; /* slight green hover like your accent color */
+  color: #00b068;
+  /* slight green hover like your accent color */
 }
 
 .modal-close-icon {
@@ -589,11 +618,14 @@ body.no-scroll {
 }
 
 .mobile-main-manu {
-  position: relative; /* Needed for absolute background inside */
+  position: relative;
+  /* Needed for absolute background inside */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center mobil-menu-list vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center;
+  /* Center mobil-menu-list vertically */
+  align-items: center;
+  /* Center horizontally */
   flex-grow: 1;
   min-height: 0;
 }
@@ -634,13 +666,15 @@ body.no-scroll {
   width: 100%;
   height: 100%;
   background-color: #f5f5f5;
-  display: flex; /* <-- always flex, no display: none */
+  display: flex;
+  /* <-- always flex, no display: none */
   flex-direction: column;
   justify-content: space-between;
   z-index: 1000;
   overflow-y: auto;
   opacity: 0;
-  pointer-events: none; /* <-- block clicks when hidden */
+  pointer-events: none;
+  /* <-- block clicks when hidden */
   transform: translateY(-100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -648,7 +682,8 @@ body.no-scroll {
 .mobile-menu.active {
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto; /* <-- allow clicks when active */
+  pointer-events: auto;
+  /* <-- allow clicks when active */
 }
 
 .arrow-link:hover .refferal-rectangle {
@@ -756,6 +791,7 @@ body.dark-mode .mobile-burger-menu-icon {
     flex-direction: column;
     gap: 0px;
   }
+
   body.dark-mode .hero-picture {
     display: block;
     width: 276px;
@@ -844,7 +880,8 @@ body.dark-mode .mobile-burger-menu-icon {
   background-size: cover;
   background-position: center;
 
-  pointer-events: none; /* so it doesn't block clicks */
+  pointer-events: none;
+  /* so it doesn't block clicks */
   z-index: -1;
 }
 
