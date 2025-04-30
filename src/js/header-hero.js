@@ -19,22 +19,22 @@ export function toggleDarkMode() {
 
   if (document.body.classList.contains('dark-mode')) {
     if (window.innerWidth >= 1280) {
-      heroSource.srcset = "../img/imgdark-bg-hero-desktop@1x.webp 1x, ../img/imgdark-bg-hero-desktop@2x.webp 2x";
-      heroImg.src = "../img/imgdark-bg-hero-desktop@1x.webp";
+      heroSource.srcset = "/img/imgdark-bg-hero-desktop@1x.webp 1x, ../img/imgdark-bg-hero-desktop@2x.webp 2x";
+      heroImg.src = "/img/imgdark-bg-hero-desktop@1x.webp";
       heroPicture.style.display = "block";
     } else if (window.innerWidth >= 768) {
-      heroSource.srcset = "../img/imgdark-bg-hero-tablet@1x.webp 1x, ../img/imgdark-bg-hero-tablet@2x.webp 2x";
-      heroImg.src = "../img/imgdark-bg-hero-tablet@1x.jpg";
+      heroSource.srcset = "/img/imgdark-bg-hero-tablet@1x.webp 1x, ../img/imgdark-bg-hero-tablet@2x.webp 2x";
+      heroImg.src = "/img/imgdark-bg-hero-tablet@1x.jpg";
       heroPicture.style.display = "block";
     } else {
-      heroSource.srcset = "../img/imgdark-bg-hero-mobile@1x.webp 1x, ../img/imgdark-bg-hero-mobile@2x.webp 2x";
-      heroImg.src = "../img/imgdark-bg-hero-mobile@1x.webp";
+      heroSource.srcset = "/img/imgdark-bg-hero-mobile@1x.webp 1x, ../img/imgdark-bg-hero-mobile@2x.webp 2x";
+      heroImg.src = "/img/imgdark-bg-hero-mobile@1x.webp";
       heroPicture.style.display = "block";
     }
   } else {
     if (window.innerWidth >= 1280) {
-      heroSource.srcset = "../img/imghero-picture@1x.jpg 1x, ../img/imghero-picture@2x.jpg 2x";
-      heroImg.src = "../img/imghero-picture@1x.jpg";
+      heroSource.srcset = "/img/imghero-picture@1x.jpg 1x, ../img/imghero-picture@2x.jpg 2x";
+      heroImg.src = "/img/imghero-picture@1x.jpg";
       heroPicture.style.display = "block";
     } else {
       heroPicture.style.display = "none";
