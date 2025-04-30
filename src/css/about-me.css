@@ -238,8 +238,10 @@ body.dark-mode .about-me {
 body.dark-mode .about-me-title,
 body.dark-mode .bio-title,
 body.dark-mode .bio-item-cont,
-body.dark-mode .education-continer,
-body.dark-mode .role-container
+body.dark-mode .education-title,
+body.dark-mode .education-item,
+body.dark-mode .role-title,
+body.dark-mode .role-item
  {
     color: #F0F0F0;
 }

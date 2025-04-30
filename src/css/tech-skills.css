@@ -129,7 +129,7 @@ span.tech-skills-point {
   
                                      /* .dark-mode */
 
-/* body.dark-mode .tech-skills-green {
+body.dark-mode .tech-skills-green {
     background-color: #204136;
     color: #F0F0F0;  
 } 
@@ -145,5 +145,5 @@ bode.dark-mode .tech-skills-grey {
 
 bode.dark-mode .tech-skills-inner-grey .tech-skills-point {
     color: #F0F0F0;
-} */
+}
 
