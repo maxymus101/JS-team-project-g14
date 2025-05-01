@@ -368,3 +368,7 @@ body.dark-mode .work-together-form-input::placeholder,
 body.dark-mode .work-together-form-message::placeholder {
     color: rgba(240, 240, 240, 0.4);
 }
+
+body.dark-mode input:invalid {
+    color: #e74a3b;
+}
