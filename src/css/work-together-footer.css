@@ -343,7 +343,8 @@ body.dark-mode .footer-additional,
 body.dark-mode .footer-socials-item-link,
 body.dark-mode .footer-span,
 body.dark-mode .work-together-form-input::placeholder,
-body.dark-mode .work-together-form-message {
+body.dark-mode .work-together-form-message,
+body.dark-mode .work-together-form-input {
     color: #F0F0F0;
 }
 
