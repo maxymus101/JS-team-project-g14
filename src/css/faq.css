@@ -308,7 +308,7 @@ body.dark-mode .btn-accordion-question :active {
     background-color: #204136;
 }
 
-body.dark-mode .icon-button-down .icon-path
+body.dark-mode .icon-button-down .icon-path,
 body.dark-mode .icon-button-up .icon-path {
     stroke: #f0f0f0;
 }
