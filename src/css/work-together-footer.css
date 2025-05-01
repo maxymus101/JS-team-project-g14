@@ -364,3 +364,10 @@ body.dark-mode .footer-socials-item-link:hover,
 body.dark-mode .work-together-contact-list-item:hover {
     color: #14C57C;
 }
+
+ body.dark-mode .work-together-form-input::placeholder,
+ body.dark-mode .work-together-form-message::placeholder {
+     color: rgba(240, 240, 240, 0.4);
+ }
+
+ 
