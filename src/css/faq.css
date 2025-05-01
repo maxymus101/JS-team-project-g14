@@ -98,7 +98,9 @@
     box-shadow: none;
 }
 
-.icon-dropdown {
+
+.icon-button-down .icon-path
+.icon-button-up .icon-path {
     width: 32px;
     height: 32px;
     display: flex;
@@ -108,6 +110,7 @@
     stroke: #292929;
     fill: none;
 }
+
 
 .accordion-content {
     box-sizing: border-box;
@@ -154,6 +157,9 @@
 .decor {
     display: none;
 }
+
+
+
 
 
 @media (min-width: 768px) {
@@ -302,8 +308,8 @@ body.dark-mode .btn-accordion-question :active {
     background-color: #204136;
 }
 
-body.dark-mode .icon-dropdown,
-body.dark-mode .icon-updown {
+body.dark-mode .icon-button-down .icon-path,
+body.dark-mode .icon-button-up .icon-path {
     stroke: #f0f0f0;
 }
 
