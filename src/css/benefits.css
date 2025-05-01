@@ -101,7 +101,6 @@
 @media only screen and (min-width: 768px) {
     .benefits-list {
         max-width: 704px;
-        max-height: 664px;
 
         flex-direction: row;
         flex-wrap: wrap;

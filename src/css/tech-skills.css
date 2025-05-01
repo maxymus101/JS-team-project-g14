@@ -1,9 +1,11 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 .tech-skills-title {
-    display: none;
+  display: none;
 }
 
 .tech-skills {
@@ -20,17 +22,17 @@
 }
 
 .tech-skills-line {
-    display: flex;
-    flex-shrink: 0;
-    min-width: 100%;
-    white-space: nowrap;
-    animation: marqueeLine 13s linear infinite;
-    padding: 32px 16px;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    letter-spacing: 0.3px;
-    gap: 12px;
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  white-space: nowrap;
+  animation: marqueeLine 13s linear infinite;
+  padding: 32px 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  letter-spacing: 0.3px;
+  gap: 12px;
 }
 
 .tech-skills-grey {
@@ -39,7 +41,7 @@
   transform: rotate(2deg);
 }
 
-.tech-skills-inner-grey, 
+.tech-skills-inner-grey,
 .tech-skills-inner-green {
   display: flex;
 }
@@ -81,69 +83,69 @@
 
 @media screen and (min-width: 768px) {
   .tech-skills {
-      font-size: 36px;
-      height: 280px;
-      margin-bottom: 124px;
-    }
+    font-size: 36px;
+    height: 280px;
+    margin-bottom: 124px;
+  }
 
-    .tech-skills-line {
-        padding: 40px 0;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-
-.tech-skills {
-  font-size: 36px;
-  height: 280px;
-  margin-bottom: 164px;
-}
-
-.tech-skills-line {
+  .tech-skills-line {
     padding: 40px 0;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
+  }
 }
 
-span.tech-skills-point {
-  margin: 12px 15px;
-}
+@media screen and (min-width: 1280px) {
+
+  .tech-skills {
+    font-size: 36px;
+    height: 280px;
+    margin-bottom: 164px;
+  }
+
+  .tech-skills-line {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span.tech-skills-point {
+    margin: 12px 15px;
+  }
 }
 
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
 }
 
-  
-                                     /* .dark-mode */
+
+/* .dark-mode */
 
 body.dark-mode .tech-skills-green {
-    background-color: #204136;
-    color: #F0F0F0;  
-} 
+  background-color: #204136;
+  color: #F0F0F0;
+}
 
 body.dark-mode .tech-skills-inner-green .tech-skills-point {
-    color: #14C57C;
-}                                    
+  color: #14C57C;
+}
 
 bode.dark-mode .tech-skills-grey {
-    background-color: #2A2D32;
-    color: #14C57C;
+  background-color: #2A2D32;
+  color: #14C57C;
 }
 
 bode.dark-mode .tech-skills-inner-grey .tech-skills-point {
-    color: #F0F0F0;
+  color: #F0F0F0;
 }
-
