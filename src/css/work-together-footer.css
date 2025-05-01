@@ -342,7 +342,6 @@ body.dark-mode .work-together-contact-list-item,
 body.dark-mode .footer-additional,
 body.dark-mode .footer-socials-item-link,
 body.dark-mode .footer-span,
-body.dark-mode .work-together-form-input::placeholder,
 body.dark-mode .work-together-form-message,
 body.dark-mode .work-together-form-input {
     color: #F0F0F0;
@@ -365,9 +364,7 @@ body.dark-mode .work-together-contact-list-item:hover {
     color: #14C57C;
 }
 
- body.dark-mode .work-together-form-input::placeholder,
- body.dark-mode .work-together-form-message::placeholder {
-     color: rgba(240, 240, 240, 0.4);
- }
-
- 
+body.dark-mode .work-together-form-input::placeholder,
+body.dark-mode .work-together-form-message::placeholder {
+    color: rgba(240, 240, 240, 0.4);
+}
