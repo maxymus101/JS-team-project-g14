@@ -354,6 +354,8 @@ body.dark-mode .footer-company-logo {
 }
 
 body.dark-mode .work-together-form-input,
+body.dark-mode .work-together-form-input:active,
+body.dark-mode .work-together-form-message:active,
 body.dark-mode .work-together-form-message {
     background-color: #2a2d32;
 }
