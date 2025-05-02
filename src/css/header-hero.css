@@ -1094,6 +1094,8 @@ body:not(.dark-mode) .hero-picture-light {
   overflow: visible;
 }
 
-body.dark-mode .hero-container {
-  padding-top: 0;
+@media screen and (min-width: 1280px) {
+  body.dark-mode .hero-container {
+    padding-top: 0;
+  }
 }
