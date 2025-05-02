@@ -1093,3 +1093,7 @@ body:not(.dark-mode) .hero-picture-light {
   height: auto;
   overflow: visible;
 }
+
+body.dark-mode .hero-container {
+  padding-top: 0;
+}
