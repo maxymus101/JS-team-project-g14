@@ -962,6 +962,10 @@ body.dark-mode .mobile-burger-menu-icon {
 }
 
 @media screen and (min-width: 1280px) {
+  body.dark-mode .hdr-container .mobile-burger-manu .mobile-burger-menu-icon {
+    display: none;
+  }
+
   body.dark-mode .social-menu {
     display: flex;
     gap: 40px;
