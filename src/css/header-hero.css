@@ -937,6 +937,10 @@ body.dark-mode .mobile-burger-menu-icon {
     cursor: pointer;
   }
 
+  body.dark-mode .dark-order-btn:hover {
+    background-color: #009156;
+  }
+
   body.dark-mode .projects-refferal {
     display: none;
   }
